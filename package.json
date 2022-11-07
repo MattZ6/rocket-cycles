@@ -1,0 +1,26 @@
+{
+  "private": true,
+  "name": "ig-timer",
+  "version": "0.0.0",
+  "type": "module",
+  "author": {
+    "name": "Matheus Felipe Zanin",
+    "url": "https://github.com/MattZ6"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "18.0.25",
+    "@types/react-dom": "18.0.8",
+    "@vitejs/plugin-react": "2.2.0",
+    "typescript": "4.8.4",
+    "vite": "3.2.3"
+  }
+}
