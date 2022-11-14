@@ -21,6 +21,7 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
+        cache: 'pnpm'
 
     - name: Setup pnpm
       uses: pnpm/action-setup@v2.2.4
@@ -51,3 +52,6 @@ jobs:
 
     - name: Check linting
       run: pnpm lint
+
+    - name: Check commits messages
+      uses: wagoid/commitlint-github-action@v5
