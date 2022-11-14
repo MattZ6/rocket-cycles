@@ -8,6 +8,13 @@
     "name": "Matheus Felipe Zanin",
     "url": "https://github.com/MattZ6"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MattZ6/ig-timer"
+  },
+  "bugs": {
+    "url": "https://github.com/MattZ6/ig-timer/issues"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
