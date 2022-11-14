@@ -3,6 +3,7 @@
   "name": "ig-timer",
   "version": "0.0.0",
   "type": "module",
+  "license": "MIT",
   "author": {
     "name": "Matheus Felipe Zanin",
     "url": "https://github.com/MattZ6"
