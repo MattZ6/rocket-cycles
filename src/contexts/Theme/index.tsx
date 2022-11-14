@@ -1,8 +1,8 @@
 import { createContext, useCallback, useEffect, useRef, useState } from 'react'
 
-import { LocalStorageUtils } from '../../utils/localStorage'
+import { LocalStorageUtils } from '@utils/localStorage'
 
-import { darkTheme, lightTheme } from '../../styles/stitches.config'
+import { darkTheme, lightTheme } from '@styles/stitches.config'
 
 import { ThemeContextTypes, ThemeProviderTypes } from './types'
 

@@ -1,4 +1,11 @@
-import { sage, green, tomato, sageDark, greenDark, tomatoDark } from '@radix-ui/colors'
+import {
+  sage,
+  green,
+  tomato,
+  sageDark,
+  greenDark,
+  tomatoDark,
+} from '@radix-ui/colors'
 import { createStitches } from '@stitches/react'
 
 const { globalCss, createTheme, theme } = createStitches({
@@ -31,9 +38,9 @@ const { globalCss, createTheme, theme } = createStitches({
 
     fontWeights: {
       regular: 400,
-      bold: 700
+      bold: 700,
     },
-  }
+  },
 })
 
 const darkTheme = createTheme({
@@ -56,7 +63,7 @@ const darkTheme = createTheme({
 
     dangerSolid: tomatoDark.tomato9,
     dangerSolidHover: tomatoDark.tomato10,
-  }
+  },
 })
 
 const globalStyles = globalCss({
