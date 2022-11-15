@@ -1,5 +1,7 @@
 import { Provider } from '@contexts/Provider'
 
+import { Router } from '@routes/Router'
+
 import { globalStyles } from '@styles/stitches.config'
 
 globalStyles()
@@ -7,7 +9,7 @@ globalStyles()
 export function App() {
   return (
     <Provider>
-      <h1>Ignite Timer</h1>
+      <Router />
     </Provider>
   )
 }
