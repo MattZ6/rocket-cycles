@@ -24,6 +24,7 @@
       "@layouts/*": ["./layouts/*"],
       "@pages/*": ["./pages/*"],
       "@styles/*": ["./styles/*"],
+      "@assets/*": ["./assets/*"],
       "@utils/*": ["./utils/*"],
       "@routes/*": ["./routes/*"],
     }
