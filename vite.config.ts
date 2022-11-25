@@ -21,6 +21,7 @@ export default defineConfig({
       { find: '@styles', replacement: resolvePath('styles') },
       { find: '@utils', replacement: resolvePath('utils') },
       { find: '@routes', replacement: resolvePath('routes') },
+      { find: '@assets', replacement: resolvePath('assets') },
     ],
   },
 })

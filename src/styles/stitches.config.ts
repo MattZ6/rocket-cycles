@@ -1,34 +1,41 @@
 import {
-  sage,
-  green,
+  slate,
+  blue,
   tomato,
-  sageDark,
-  greenDark,
+  slateDark,
+  blueDark,
   tomatoDark,
 } from '@radix-ui/colors'
 import { createStitches } from '@stitches/react'
 
-const { globalCss, createTheme, theme } = createStitches({
+const { globalCss, createTheme, theme, styled, keyframes } = createStitches({
   theme: {
     colors: {
-      defaultBackground: sage.sage1,
-      defaultSubtleBackground: sage.sage2,
-      defaultElementBackground: sage.sage3,
-      defaultElementBackgroundHover: sage.sage4,
-      defaultElementBackgroundActive: sage.sage5,
-      defaultBorder: sage.sage6,
-      defaultElementBorder: sage.sage7,
-      defaultElementBorderActive: sage.sage8,
-      defaultSolid: sage.sage9,
-      defaultSolidHover: sage.sage10,
-      defaultLowContrastText: sage.sage11,
-      defaultHighContrastText: sage.sage12,
+      defaultBackground: slate.slate2,
+      defaultSubtleBackground: slate.slate1,
+      defaultElementBackground: slate.slate3,
+      defaultElementBackgroundHover: slate.slate4,
+      defaultElementBackgroundActive: slate.slate5,
+      defaultBorder: slate.slate6,
+      defaultElementBorder: slate.slate7,
+      defaultElementBorderActive: slate.slate8,
+      defaultSolid: slate.slate9,
+      defaultSolidHover: slate.slate10,
+      defaultLowContrastText: slate.slate11,
+      defaultHighContrastText: slate.slate12,
 
-      brandSolid: green.green9,
-      brandSolidHover: green.green10,
+      brandElementBackground: blue.blue3,
+      brandElementBackgroundHover: blue.blue4,
+      brandElementBackgroundActive: blue.blue5,
+      brandBorder: blue.blue6,
+      brandSolid: blue.blue9,
+      brandSolidHover: blue.blue10,
 
       dangerSolid: tomato.tomato9,
       dangerSolidHover: tomato.tomato10,
+
+      tooltipBackground: slateDark.slate1,
+      tooltipText: slateDark.slate12,
     },
 
     fonts: {
@@ -36,33 +43,76 @@ const { globalCss, createTheme, theme } = createStitches({
       mono: "'Roboto Mono', monospace",
     },
 
+    fontSizes: {
+      normal: '14px',
+      default: '16px',
+      medium: '20px',
+    },
+
+    lineHeights: {
+      normal: '24px',
+      default: '24px',
+      medium: '32px',
+    },
+
     fontWeights: {
       regular: 400,
       bold: 700,
     },
+
+    sizes: {
+      largeScreen: '1120px',
+    },
+
+    space: {
+      smaller: '4px',
+      small: '8px',
+      midNormal: '12px',
+      normal: '16px',
+      medium: '24px',
+    },
+
+    radii: {
+      small: '8px',
+    },
+
+    transitions: {
+      default: '150ms ease-out',
+    },
+  },
+
+  media: {
+    medium: 'screen and (max-width: 1264px)',
   },
 })
 
 const darkTheme = createTheme({
   colors: {
-    defaultBackground: sageDark.sage1,
-    defaultSubtleBackground: sageDark.sage2,
-    defaultElementBackground: sageDark.sage3,
-    defaultElementBackgroundHover: sageDark.sage4,
-    defaultElementBackgroundActive: sageDark.sage5,
-    defaultBorder: sageDark.sage6,
-    defaultElementBorder: sageDark.sage7,
-    defaultElementBorderActive: sageDark.sage8,
-    defaultSolid: sageDark.sage9,
-    defaultSolidHover: sageDark.sage10,
-    defaultLowContrastText: sageDark.sage11,
-    defaultHighContrastText: sageDark.sage12,
+    defaultBackground: slateDark.slate1,
+    defaultSubtleBackground: slateDark.slate2,
+    defaultElementBackground: slateDark.slate3,
+    defaultElementBackgroundHover: slateDark.slate4,
+    defaultElementBackgroundActive: slateDark.slate5,
+    defaultBorder: slateDark.slate6,
+    defaultElementBorder: slateDark.slate7,
+    defaultElementBorderActive: slateDark.slate8,
+    defaultSolid: slateDark.slate9,
+    defaultSolidHover: slateDark.slate10,
+    defaultLowContrastText: slateDark.slate11,
+    defaultHighContrastText: slateDark.slate12,
 
-    brandSolid: greenDark.green9,
-    brandSolidHover: greenDark.green10,
+    brandElementBackground: blueDark.blue3,
+    brandElementBackgroundHover: blueDark.blue4,
+    brandElementBackgroundActive: blueDark.blue5,
+    brandBorder: blueDark.blue6,
+    brandSolid: blueDark.blue9,
+    brandSolidHover: blueDark.blue10,
 
     dangerSolid: tomatoDark.tomato9,
     dangerSolidHover: tomatoDark.tomato10,
+
+    tooltipBackground: slate.slate1,
+    tooltipText: slate.slate12,
   },
 })
 
@@ -80,7 +130,18 @@ const globalStyles = globalCss({
   html: {
     backgroundColor: '$defaultBackground',
     color: '$defaultHighContrastText',
+
+    '@medium': {
+      backgroundColor: '$defaultSubtleBackground',
+    },
   },
 })
 
-export { globalStyles, theme as lightTheme, darkTheme, createTheme }
+export {
+  globalStyles,
+  theme as lightTheme,
+  darkTheme,
+  createTheme,
+  styled,
+  keyframes,
+}
