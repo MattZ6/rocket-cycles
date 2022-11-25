@@ -45,10 +45,14 @@ const { globalCss, createTheme, theme, styled, keyframes } = createStitches({
 
     fontSizes: {
       normal: '14px',
+      default: '16px',
+      medium: '20px',
     },
 
     lineHeights: {
       normal: '24px',
+      default: '24px',
+      medium: '32px',
     },
 
     fontWeights: {
@@ -63,11 +67,17 @@ const { globalCss, createTheme, theme, styled, keyframes } = createStitches({
     space: {
       smaller: '4px',
       small: '8px',
+      midNormal: '12px',
       normal: '16px',
+      medium: '24px',
     },
 
     radii: {
       small: '8px',
+    },
+
+    transitions: {
+      default: '150ms ease-out',
     },
   },
 
