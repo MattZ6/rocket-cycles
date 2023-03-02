@@ -5,7 +5,7 @@ specifiers:
   '@commitlint/config-conventional': 17.4.4
   '@radix-ui/colors': 0.1.8
   '@radix-ui/react-select': 1.2.0
-  '@radix-ui/react-tooltip': 1.0.3
+  '@radix-ui/react-tooltip': 1.0.4
   '@rocketseat/eslint-config': 1.2.0
   '@stitches/react': 1.2.8
   '@types/node': 18.14.1
@@ -26,7 +26,7 @@ specifiers:
 dependencies:
   '@radix-ui/colors': 0.1.8
   '@radix-ui/react-select': 1.2.0_zula6vjvt3wdocc4mwcxqa6nzi
-  '@radix-ui/react-tooltip': 1.0.3_zula6vjvt3wdocc4mwcxqa6nzi
+  '@radix-ui/react-tooltip': 1.0.4_zula6vjvt3wdocc4mwcxqa6nzi
   '@stitches/react': 1.2.8_react@18.2.0
   phosphor-react: 1.4.1_react@18.2.0
   react: 18.2.0
@@ -1014,8 +1014,8 @@ packages:
       react: 18.2.0
     dev: false
 
-  /@radix-ui/react-tooltip/1.0.3_zula6vjvt3wdocc4mwcxqa6nzi:
-    resolution: {integrity: sha512-cmc9qV4KpgqdXVTn1K8KN8MnuSXvw+E719pKwyvpCGrQ+0AA2qTjcIL3uxCj4jc4k3sDR36RF7R3H7N5hPybBQ==}
+  /@radix-ui/react-tooltip/1.0.4_zula6vjvt3wdocc4mwcxqa6nzi:
+    resolution: {integrity: sha512-2h0BvJipRSv7nszzOCdAqb8fH7+Igz24GV1M4aCb/3UPfeMQ+clb1UM5/z2msW3Khir795OCQw2G74YGxjueWw==}
     peerDependencies:
       react: ^16.8 || ^17.0 || ^18.0
       react-dom: ^16.8 || ^17.0 || ^18.0
