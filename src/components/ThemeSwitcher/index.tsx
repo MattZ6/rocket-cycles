@@ -1,5 +1,5 @@
+import { AppWindow, Check, Moon, Sun } from '@phosphor-icons/react'
 import { SelectItemProps } from '@radix-ui/react-select'
-import { AppWindow, Check, Moon, Sun } from 'phosphor-react'
 
 import { useTheme } from '@hooks/useTheme'
 
