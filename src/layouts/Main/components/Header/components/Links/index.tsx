@@ -1,4 +1,4 @@
-import { Timer, Scroll } from 'phosphor-react'
+import { Timer, Scroll } from '@phosphor-icons/react'
 
 import { Tooltip } from '@components/Tooltip'
 

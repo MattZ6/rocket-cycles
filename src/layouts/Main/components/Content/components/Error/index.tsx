@@ -1,4 +1,4 @@
-import { ArrowClockwise, SmileyXEyes } from 'phosphor-react'
+import { ArrowClockwise, SmileyXEyes } from '@phosphor-icons/react'
 
 import { ErrorStyles as Styles } from './styles'
 
