@@ -30,6 +30,7 @@ const { globalCss, createTheme, theme, styled, keyframes } = createStitches({
       brandBorder: blue.blue6,
       brandSolid: blue.blue9,
       brandSolidHover: blue.blue10,
+      brandHighContrastText: blueDark.blue12,
 
       dangerSolid: tomato.tomato9,
       dangerSolidHover: tomato.tomato10,
@@ -47,12 +48,14 @@ const { globalCss, createTheme, theme, styled, keyframes } = createStitches({
       normal: '14px',
       default: '16px',
       medium: '20px',
+      countdown: '160px',
     },
 
     lineHeights: {
       normal: '24px',
       default: '24px',
       medium: '32px',
+      countdown: '128px',
     },
 
     fontWeights: {
@@ -70,6 +73,7 @@ const { globalCss, createTheme, theme, styled, keyframes } = createStitches({
       midNormal: '12px',
       normal: '16px',
       medium: '24px',
+      large: '56px',
     },
 
     radii: {
@@ -107,6 +111,7 @@ const darkTheme = createTheme({
     brandBorder: blueDark.blue6,
     brandSolid: blueDark.blue9,
     brandSolidHover: blueDark.blue10,
+    brandHighContrastText: blueDark.blue12,
 
     dangerSolid: tomatoDark.tomato9,
     dangerSolidHover: tomatoDark.tomato10,
@@ -125,6 +130,7 @@ const globalStyles = globalCss({
     fontFamily: '$texts',
 
     '-webkit-tap-highlight-color': 'transparent',
+    '-webkit-font-smoothing': 'antialiased',
   },
 
   html: {
