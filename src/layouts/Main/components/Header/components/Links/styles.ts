@@ -20,10 +20,30 @@ export namespace LinksStyles {
     width: '$$size',
     height: '$$size',
 
+    position: 'relative',
+
     color: '$defaultHighContrastText',
 
     borderRadius: '$small',
     outline: '2px solid transparent',
+
+    '&::after': {
+      content: '',
+
+      position: 'absolute',
+      bottom: 2,
+      borderRadius: '$small',
+
+      width: 0,
+      height: 3,
+
+      backgroundColor: 'transparent',
+
+      '@media (prefers-reduced-motion: no-preference)': {
+        transition: '$default',
+        transitionProperty: 'background-color, width',
+      },
+    },
 
     '@media (prefers-reduced-motion: no-preference)': {
       transition: '$default',
@@ -48,6 +68,11 @@ export namespace LinksStyles {
 
       '&:focus-visible': {
         outlineColor: '$brandBorder',
+      },
+
+      '&::after': {
+        width: 'calc(100% - 16px)',
+        backgroundColor: '$brandSolid',
       },
     },
   })
