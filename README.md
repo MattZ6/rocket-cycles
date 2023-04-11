@@ -7,7 +7,7 @@
 
   <strong>🚧 Under development... 🚧</strong>
 
-  [![license-image]][license-url] [![Netlify Status](https://api.netlify.com/api/v1/badges/6289db1a-7f81-4ed9-9b68-f9fc31b1b1c9/deploy-status)](https://app.netlify.com/sites/ig-timer/deploys)
+  [![license-image]][license-url] [![deploy-image]][deploy-url]
 
   <p></p>
 </div>
@@ -78,3 +78,6 @@ ___
 
 [license-url]: LICENSE.md
 [license-image]: https://img.shields.io/github/license/MattZ6/auth-flow?color=303030&labelColor=232320&style=for-the-badge
+
+[deploy-url]: https://app.netlify.com/sites/ig-timer/deploys
+[deploy-image]: https://img.shields.io/netlify/6289db1a-7f81-4ed9-9b68-f9fc31b1b1c9?logo=netlify&labelColor=232320&style=for-the-badge
