@@ -7,7 +7,7 @@
 
   <strong>🚧 Under development... 🚧</strong>
 
-  [![build-image]][build-url]  [![license-image]][license-url] [![deploy-image]][deploy-url]
+  [![build-image]][build-url] [![license-image]][license-url] [![deploy-image]][deploy-url]
 
   <p></p>
 </div>
