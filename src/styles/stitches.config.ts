@@ -1,10 +1,14 @@
 import {
   slate,
   blue,
-  tomato,
+  red,
   slateDark,
   blueDark,
-  tomatoDark,
+  redDark,
+  grass,
+  grassDark,
+  orangeDark,
+  orange,
 } from '@radix-ui/colors'
 import { createStitches } from '@stitches/react'
 
@@ -32,8 +36,14 @@ const { globalCss, createTheme, theme, styled, keyframes } = createStitches({
       brandSolidHover: blue.blue10,
       brandHighContrastText: blueDark.blue12,
 
-      dangerSolid: tomato.tomato9,
-      dangerSolidHover: tomato.tomato10,
+      successSolid: grass.grass9,
+      successSolidHover: grass.grass10,
+
+      pendingSolid: orange.orange9,
+      pendingSolidHover: orange.orange10,
+
+      dangerSolid: red.red9,
+      dangerSolidHover: red.red10,
 
       tooltipBackground: slateDark.slate1,
       tooltipText: slateDark.slate12,
@@ -48,6 +58,7 @@ const { globalCss, createTheme, theme, styled, keyframes } = createStitches({
       normal: '14px',
       default: '16px',
       medium: '20px',
+      headline: '24px',
       countdown: '160px',
     },
 
@@ -113,8 +124,14 @@ const darkTheme = createTheme({
     brandSolidHover: blueDark.blue10,
     brandHighContrastText: blueDark.blue12,
 
-    dangerSolid: tomatoDark.tomato9,
-    dangerSolidHover: tomatoDark.tomato10,
+    successSolid: grassDark.grass9,
+    successSolidHover: grassDark.grass10,
+
+    pendingSolid: orangeDark.orange9,
+    pendingSolidHover: orangeDark.orange10,
+
+    dangerSolid: redDark.red9,
+    dangerSolidHover: redDark.red10,
 
     tooltipBackground: slate.slate1,
     tooltipText: slate.slate12,
