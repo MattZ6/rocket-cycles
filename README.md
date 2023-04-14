@@ -7,7 +7,7 @@
 
   <strong>🚧 Under development... 🚧</strong>
 
-  [![check-image]][check-url]  [![license-image]][license-url] [![deploy-image]][deploy-url]
+  [![build-image]][build-url] [![license-image]][license-url] [![deploy-image]][deploy-url]
 
   <p></p>
 </div>
@@ -76,8 +76,8 @@ ___
   <strong>Ignite Bootcamp 🔥</strong>
 </div>
 
-[check-url]: https://github.com/MattZ6/ig-timer/actions
-[check-image]: https://img.shields.io/github/checks-status/mattz6/ig-timer/main?labelColor=232320&style=for-the-badge
+[build-url]: https://github.com/MattZ6/ig-timer/actions
+[build-image]: https://img.shields.io/github/actions/workflow/status/mattz6/ig-timer/ci.yml?labelColor=232320&style=for-the-badge
 
 [license-url]: LICENSE.md
 [license-image]: https://img.shields.io/github/license/MattZ6/auth-flow?color=303030&labelColor=232320&style=for-the-badge
