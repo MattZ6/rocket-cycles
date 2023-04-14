@@ -13,7 +13,7 @@ export function Links() {
         </Styles.Link>
       </Tooltip>
 
-      <Tooltip content="History" side="bottom">
+      <Tooltip content="My history" side="bottom">
         <Styles.Link to="/history" aria-label="Go to history page">
           <Scroll aria-hidden size={24} />
         </Styles.Link>
