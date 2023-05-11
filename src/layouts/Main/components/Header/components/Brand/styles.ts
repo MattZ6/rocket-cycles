@@ -8,8 +8,10 @@ export namespace BrandStyles {
   })
 
   export const Title = styled('strong', {
+    fontFamily: '$mono',
     fontSize: '$medium',
     lineHeight: '$medium',
+    letterSpacing: '-0.5px',
     color: '$brandSolid',
   })
 }

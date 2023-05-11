@@ -7,7 +7,7 @@ export function Brand() {
     <Styles.Container>
       <img src={logo} alt="" />
 
-      <Styles.Title>Ignite Timer</Styles.Title>
+      <Styles.Title>igTimer</Styles.Title>
     </Styles.Container>
   )
 }
