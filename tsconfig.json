@@ -27,6 +27,7 @@
       "@assets/*": ["./assets/*"],
       "@utils/*": ["./utils/*"],
       "@routes/*": ["./routes/*"],
+      "@config/*": ["./config/*"],
     }
   },
   "include": ["src"],

@@ -11,6 +11,7 @@
         "newlinesBetween": "always",
         "groups": [
           "module",
+          "/^@config/",
           "/^@contexts/",
           "/^@hooks/",
           "/^@services/",
