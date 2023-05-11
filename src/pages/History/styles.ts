@@ -33,7 +33,7 @@ export namespace HistoryPageStyles {
 
     '> h1': {
       fontSize: '$headline',
-      lineHeight: '160%'
+      lineHeight: '160%',
     },
   })
 
