@@ -3,7 +3,7 @@ import { HistoryPageStyles as Styles } from './styles'
 export default function HistoryPage() {
   return (
     <Styles.Container>
-      <h1>My history</h1>
+      <h1>History</h1>
 
       <Styles.History>
         <div>
