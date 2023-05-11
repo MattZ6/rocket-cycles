@@ -1,23 +1,17 @@
 import { Timer, Scroll } from '@phosphor-icons/react'
 
-import { Tooltip } from '@components/Tooltip'
-
+import { Link } from './components'
 import { LinksStyles as Styles } from './styles'
 
 export function Links() {
   return (
     <Styles.Container>
-      <Tooltip content="Timer" side="bottom">
-        <Styles.Link to="/" aria-label="Go to timer page">
-          <Timer aria-hidden size={24} />
-        </Styles.Link>
-      </Tooltip>
-
-      <Tooltip content="My history" side="bottom">
-        <Styles.Link to="/history" aria-label="Go to history page">
-          <Scroll aria-hidden size={24} />
-        </Styles.Link>
-      </Tooltip>
+      <Link icon={Timer} to="/">
+        Timer
+      </Link>
+      <Link icon={Scroll} to="/history">
+        History
+      </Link>
     </Styles.Container>
   )
 }

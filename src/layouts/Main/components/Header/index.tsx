@@ -1,18 +1,14 @@
-import { ThemeSwitcher } from '@components/ThemeSwitcher'
-
-import logo from '@assets/logo.svg'
-
-import { Links } from './components'
+import { Brand, Links } from './components'
 import { HeaderStyles as Styles } from './styles'
 
 export function Header() {
   return (
-    <Styles.Container>
-      <img src={logo} alt="" />
+    <Styles.Header>
+      <Styles.Content>
+        <Brand />
 
-      <Links />
-
-      <ThemeSwitcher />
-    </Styles.Container>
+        <Links />
+      </Styles.Content>
+    </Styles.Header>
   )
 }
