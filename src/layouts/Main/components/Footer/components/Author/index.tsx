@@ -1,3 +1,5 @@
+import Avatar from '@assets/avatar.jpg'
+
 import { AuthorStyles as Styles } from './styles'
 
 export function Author() {
@@ -5,11 +7,7 @@ export function Author() {
     <Styles.Text>
       Created by{' '}
       <Styles.Link href="https://github.com/MattZ6" target="_blank">
-        <Styles.Avatar
-          loading="lazy"
-          src="https://github.com/MattZ6.png?size=20"
-          alt=""
-        />
+        <Styles.Avatar loading="lazy" src={Avatar} alt="" />
         Matheus Zanin
       </Styles.Link>
     </Styles.Text>
