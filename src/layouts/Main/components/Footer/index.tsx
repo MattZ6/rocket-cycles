@@ -1,4 +1,4 @@
-import { SocialLinks, Author } from './components'
+import { SocialLinks, Author, ThemeSwitcher } from './components'
 import { FooterStyles as Styles } from './styles'
 
 export function Footer() {
@@ -9,7 +9,7 @@ export function Footer() {
 
         <Author />
 
-        <span />
+        <ThemeSwitcher />
       </Styles.Content>
     </Styles.Footer>
   )
