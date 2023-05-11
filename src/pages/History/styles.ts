@@ -14,9 +14,18 @@ export namespace HistoryPageStyles {
     flex: 1,
     display: 'flex',
     flexDirection: 'column',
-
-    padding: '$large',
     gap: '$medium',
+
+    paddingTop: '$large',
+    paddingBottom: '$large',
+
+    paddingLeft: '$normal',
+    paddingRight: '$normal',
+
+    width: '100%',
+    maxWidth: '$largeScreen',
+
+    margin: '0 auto',
 
     '@media (prefers-reduced-motion: no-preference)': {
       animation: `${fadeInAnimation} 150ms ease-out`,
@@ -24,6 +33,7 @@ export namespace HistoryPageStyles {
 
     '> h1': {
       fontSize: '$headline',
+      lineHeight: '160%',
     },
   })
 

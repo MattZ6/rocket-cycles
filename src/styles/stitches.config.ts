@@ -75,7 +75,7 @@ const { globalCss, createTheme, theme, styled, keyframes } = createStitches({
     },
 
     sizes: {
-      largeScreen: '1120px',
+      largeScreen: '1180px',
     },
 
     space: {
@@ -153,10 +153,6 @@ const globalStyles = globalCss({
   html: {
     backgroundColor: '$defaultBackground',
     color: '$defaultHighContrastText',
-
-    '@medium': {
-      backgroundColor: '$defaultSubtleBackground',
-    },
   },
 })
 

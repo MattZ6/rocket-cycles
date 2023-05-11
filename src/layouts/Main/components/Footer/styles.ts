@@ -1,18 +1,19 @@
 import { styled } from '@styles/stitches.config'
 
-export namespace HeaderStyles {
-  export const Header = styled('header')
+export namespace FooterStyles {
+  export const Footer = styled('footer', {})
 
   export const Content = styled('div', {
-    display: 'flex',
+    display: 'grid',
+    gridTemplateColumns: 'repeat(3, 1fr)',
     alignItems: 'center',
     gap: '$large',
 
     width: '100%',
     maxWidth: '$largeScreen',
 
-    paddingTop: '$medium',
-    paddingBottom: '$normal',
+    paddingTop: '$normal',
+    paddingBottom: '$medium',
 
     paddingLeft: '$normal',
     paddingRight: '$normal',

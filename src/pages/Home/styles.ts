@@ -20,6 +20,11 @@ export namespace HomePageStyles {
     alignItems: 'center',
     justifyContent: 'center',
 
+    width: '100%',
+    maxWidth: '$largeScreen',
+
+    margin: '0 auto',
+
     '@media (prefers-reduced-motion: no-preference)': {
       animation: `${fadeInAnimation} 150ms ease-out`,
     },

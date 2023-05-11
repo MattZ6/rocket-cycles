@@ -1,14 +1,14 @@
-import { Content, Header } from './components'
+import { Content, Footer, Header } from './components'
 import { MainLayoutStyles as Styles } from './styles'
 
 export function MainLayout() {
   return (
     <Styles.Wrapper>
-      <Styles.Container>
-        <Header />
+      <Header />
 
-        <Content />
-      </Styles.Container>
+      <Content />
+
+      <Footer />
     </Styles.Wrapper>
   )
 }
