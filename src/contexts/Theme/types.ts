@@ -6,6 +6,7 @@ export namespace ThemeContextTypes {
   export type SelectThemeInput = Theme
 
   export type Context = {
+    options: Theme[]
     theme: Theme
     selectTheme: (input: SelectThemeInput) => void
   }

@@ -1,4 +1,11 @@
-import { createContext, useCallback, useEffect, useRef, useState } from 'react'
+import {
+  createContext,
+  useCallback,
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+} from 'react'
 
 import { LocalStorageUtils } from '@utils/localStorage'
 
@@ -46,6 +53,11 @@ function ThemeProvider({ children }: ThemeProviderTypes.Props) {
   const selectTheme = useCallback((input: ThemeContextTypes.Theme) => {
     setTheme(input)
   }, [])
+
+  const options = useMemo<ThemeContextTypes.Theme[]>(
+    () => ['light', 'dark', 'system'],
+    [],
+  )
 
   function applyColorMode(colorMode: 'light' | 'dark') {
     const classToRemove =
@@ -96,7 +108,7 @@ function ThemeProvider({ children }: ThemeProviderTypes.Props) {
   }, [theme])
 
   return (
-    <ThemeContext.Provider value={{ theme, selectTheme }}>
+    <ThemeContext.Provider value={{ theme, selectTheme, options }}>
       {children}
     </ThemeContext.Provider>
   )

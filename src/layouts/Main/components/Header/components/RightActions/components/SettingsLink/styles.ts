@@ -17,6 +17,7 @@ export namespace SettingsLinkStyles {
 
     borderRadius: '$small',
     outline: '2px solid transparent',
+    outlineOffset: '2px',
 
     lineHeight: 0,
     textDecoration: 'none',

@@ -18,6 +18,7 @@ export namespace LinkStyles {
 
     borderRadius: '$small',
     outline: '2px solid transparent',
+    outlineOffset: '2px',
 
     paddingLeft: '$midNormal',
     paddingRight: '$normal',

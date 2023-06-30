@@ -34,6 +34,7 @@ export namespace AuthorStyles {
     borderRadius: '$small',
 
     outline: '2px solid transparent',
+    outlineOffset: '2px',
 
     '@media (prefers-reduced-motion: no-preference)': {
       transition: '$default',

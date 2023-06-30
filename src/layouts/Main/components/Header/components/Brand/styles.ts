@@ -5,6 +5,9 @@ export namespace BrandStyles {
     display: 'flex',
     alignItems: 'center',
     gap: '$midNormal',
+
+    userSelect: 'none',
+    pointerEvents: 'none',
   })
 
   export const Title = styled('strong', {
