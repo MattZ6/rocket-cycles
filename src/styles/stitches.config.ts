@@ -150,6 +150,16 @@ const globalStyles = globalCss({
     '-webkit-font-smoothing': 'antialiased',
   },
 
+  img: {
+    userSelect: 'none',
+  },
+  a: {
+    userSelect: 'none',
+  },
+  button: {
+    userSelect: 'none',
+  },
+
   html: {
     backgroundColor: '$defaultBackground',
     color: '$defaultHighContrastText',
