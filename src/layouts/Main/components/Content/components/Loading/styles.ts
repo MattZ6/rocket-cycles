@@ -8,6 +8,11 @@ export namespace LoadingStyles {
     gap: '$small',
 
     padding: '$medium',
+
+    width: '100%',
+    maxWidth: '$largeScreen',
+
+    margin: '0 auto',
   })
 
   export const SkeletonTitle = styled('div', {
