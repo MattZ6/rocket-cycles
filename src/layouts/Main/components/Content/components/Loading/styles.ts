@@ -7,7 +7,11 @@ export namespace LoadingStyles {
     flexDirection: 'column',
     gap: '$small',
 
-    padding: '$medium',
+    paddingTop: '$large',
+    paddingBottom: '$large',
+
+    paddingLeft: '$normal',
+    paddingRight: '$normal',
 
     width: '100%',
     maxWidth: '$largeScreen',

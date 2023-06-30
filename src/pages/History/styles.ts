@@ -1,42 +1,6 @@
-import { keyframes, styled } from '@styles/stitches.config'
+import { styled } from '@styles/stitches.config'
 
 export namespace HistoryPageStyles {
-  const fadeInAnimation = keyframes({
-    from: {
-      opacity: 0,
-    },
-    to: {
-      opacity: 1,
-    },
-  })
-
-  export const Container = styled('div', {
-    flex: 1,
-    display: 'flex',
-    flexDirection: 'column',
-    gap: '$medium',
-
-    paddingTop: '$large',
-    paddingBottom: '$large',
-
-    paddingLeft: '$normal',
-    paddingRight: '$normal',
-
-    width: '100%',
-    maxWidth: '$largeScreen',
-
-    margin: '0 auto',
-
-    '@media (prefers-reduced-motion: no-preference)': {
-      animation: `${fadeInAnimation} 150ms ease-out`,
-    },
-
-    '> h1': {
-      fontSize: '$headline',
-      lineHeight: '160%',
-    },
-  })
-
   export const History = styled('div', {
     flex: 1,
 
@@ -82,6 +46,11 @@ export namespace HistoryPageStyles {
   export const TableBody = styled('tbody', {
     tr: {
       backgroundColor: '$defaultElementBackground',
+
+      '@media (prefers-reduced-motion: no-preference)': {
+        transition: '$default',
+        transitionProperty: 'background-color',
+      },
 
       '&:last-child > td:first-child': {
         borderBottomLeftRadius: '$small',

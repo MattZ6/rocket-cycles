@@ -68,8 +68,16 @@ export namespace HomePageStyles {
     boxShadow: 'none',
     outline: 'none',
 
+    caretColor: '$brandSolid',
+
+    '@media (prefers-reduced-motion: no-preference)': {
+      transition: '$default',
+      transitionProperty: 'border-color',
+    },
+
     '&::placeholder': {
       color: '$defaultLowContrastText',
+      fontWeight: '$regular',
     },
 
     '&:focus-visible': {
@@ -94,6 +102,8 @@ export namespace HomePageStyles {
   export const CountdownContainer = styled('div', {
     display: 'flex',
     gap: '$normal',
+
+    userSelect: 'none',
   })
 
   export const CountdownNumber = styled('span', {

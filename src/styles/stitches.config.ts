@@ -1,9 +1,11 @@
 import {
   slate,
   blue,
+  blueA,
   red,
   slateDark,
   blueDark,
+  blueDarkA,
   redDark,
   grass,
   grassDark,
@@ -47,6 +49,9 @@ const { globalCss, createTheme, theme, styled, keyframes } = createStitches({
 
       tooltipBackground: slateDark.slate1,
       tooltipText: slateDark.slate12,
+
+      selectionBackground: blueA.blueA5,
+      selectionText: blueA.blueA11,
     },
 
     fonts: {
@@ -58,7 +63,7 @@ const { globalCss, createTheme, theme, styled, keyframes } = createStitches({
       normal: '14px',
       default: '16px',
       medium: '20px',
-      headline: '24px',
+      headline: '32px',
       countdown: '160px',
     },
 
@@ -66,11 +71,13 @@ const { globalCss, createTheme, theme, styled, keyframes } = createStitches({
       normal: '24px',
       default: '24px',
       medium: '32px',
+      headline: '160%',
       countdown: '128px',
     },
 
     fontWeights: {
       regular: 400,
+      medium: 500,
       bold: 700,
     },
 
@@ -84,11 +91,13 @@ const { globalCss, createTheme, theme, styled, keyframes } = createStitches({
       midNormal: '12px',
       normal: '16px',
       medium: '24px',
+      lg: '40px',
       large: '56px',
     },
 
     radii: {
       small: '8px',
+      full: '999999px',
     },
 
     transitions: {
@@ -135,6 +144,9 @@ const darkTheme = createTheme({
 
     tooltipBackground: slate.slate1,
     tooltipText: slate.slate12,
+
+    selectionBackground: blueDarkA.blueA5,
+    selectionText: blueDarkA.blueA11,
   },
 })
 
@@ -150,12 +162,19 @@ const globalStyles = globalCss({
     '-webkit-font-smoothing': 'antialiased',
   },
 
+  '::selection': {
+    backgroundColor: '$selectionBackground',
+    color: '$selectionText',
+  },
+
   img: {
     userSelect: 'none',
   },
+
   a: {
     userSelect: 'none',
   },
+
   button: {
     userSelect: 'none',
   },
