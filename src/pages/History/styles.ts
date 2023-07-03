@@ -1,14 +1,6 @@
 import { styled } from '@styles/stitches.config'
 
 export namespace HistoryPageStyles {
-  export const History = styled('div', {
-    flex: 1,
-
-    overflow: 'auto',
-
-    '> div': { height: 0 },
-  })
-
   export const Table = styled('table', {
     width: '100%',
     minWidth: '600px',
@@ -16,10 +8,12 @@ export namespace HistoryPageStyles {
     borderCollapse: 'collapse',
 
     whiteSpace: 'nowrap',
+
+    // margin: '-$medium',
   })
 
   export const TableHead = styled('thead', {
-    backgroundColor: '$defaultElementBackgroundActive',
+    backgroundColor: '$defaultSubtleBackground',
 
     position: 'sticky',
     top: 0,
@@ -32,12 +26,12 @@ export namespace HistoryPageStyles {
       padding: '$normal',
 
       '&:first-child': {
-        borderTopLeftRadius: '$small',
+        // borderTopLeftRadius: '$small',
         paddingLeft: '$medium',
       },
 
       '&:last-child': {
-        borderTopRightRadius: '$small',
+        // borderTopRightRadius: '$small',
         paddingRight: '$medium',
       },
     },
@@ -45,24 +39,20 @@ export namespace HistoryPageStyles {
 
   export const TableBody = styled('tbody', {
     tr: {
-      backgroundColor: '$defaultElementBackground',
-
-      '@media (prefers-reduced-motion: no-preference)': {
-        transition: '$default',
-        transitionProperty: 'background-color',
-      },
-
-      '&:last-child > td:first-child': {
-        borderBottomLeftRadius: '$small',
-      },
-
-      '&:last-child > td:last-child': {
-        borderBottomRightRadius: '$small',
-      },
-
-      '&:hover': {
-        backgroundColor: '$defaultElementBackgroundHover',
-      },
+      // backgroundColor: '$defaultElementBackground',
+      // '@media (prefers-reduced-motion: no-preference)': {
+      //   transition: '$default',
+      //   transitionProperty: 'background-color',
+      // },
+      // '&:last-child > td:first-child': {
+      //   borderBottomLeftRadius: '$small',
+      // },
+      // '&:last-child > td:last-child': {
+      //   borderBottomRightRadius: '$small',
+      // },
+      // '&:hover': {
+      //   backgroundColor: '$defaultElementBackgroundHover',
+      // },
     },
 
     td: {
@@ -72,9 +62,9 @@ export namespace HistoryPageStyles {
       color: '$defaultLowContrastText',
 
       padding: '$normal',
-      borderTopWidth: '4px',
+      borderTopWidth: '1px',
       borderTopStyle: 'solid',
-      borderTopColor: '$defaultSubtleBackground',
+      borderTopColor: '$defaultBorder',
 
       '&:first-child': {
         width: '50%',
@@ -88,38 +78,35 @@ export namespace HistoryPageStyles {
   })
 
   export const Status = styled('span', {
-    display: 'flex',
+    display: 'inline-flex',
     alignItems: 'center',
-    gap: '$small',
+
+    $$size: '28px',
+
+    height: '$$size',
+    borderRadius: '$$size',
+
+    padding: '0 $small',
+    border: '1px solid transparent',
 
     variants: {
       statusColor: {
         success: {
-          '&::before': {
-            backgroundColor: '$successSolid',
-          },
+          color: '$successSolid',
+          backgroundColor: '$successElementBackground',
+          borderColor: '$successBorder',
         },
         failure: {
-          '&::before': {
-            backgroundColor: '$dangerSolid',
-          },
+          color: '$dangerSolid',
+          backgroundColor: '$dangerElementBackground',
+          borderColor: '$dangerBorder',
         },
         inProgress: {
-          '&::before': {
-            backgroundColor: '$brandSolid',
-          },
+          color: '$brandSolid',
+          backgroundColor: '$brandElementBackground',
+          borderColor: '$brandBorder',
         },
       },
-    },
-
-    '&::before': {
-      $$size: '8px',
-
-      content: '',
-
-      width: '$$size',
-      height: '$$size',
-      borderRadius: '$$size',
     },
   })
 }

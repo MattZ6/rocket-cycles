@@ -27,6 +27,17 @@ export namespace SectionRootStyles {
     flexDirection: 'column',
     gap: '$medium',
 
-    padding: '$medium',
+    variants: {
+      withoutInternalPadding: {
+        true: {},
+        false: {
+          padding: '$medium',
+        },
+      },
+    },
+
+    defaultVariants: {
+      withoutInternalPadding: 'false',
+    },
   })
 }
