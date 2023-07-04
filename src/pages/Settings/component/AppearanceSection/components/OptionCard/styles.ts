@@ -99,6 +99,7 @@ export namespace OptionCardStyles {
       selected: {
         true: {
           borderColor: '$brandSolid',
+          backgroundColor: '$brandElementBackground',
 
           '> svg': {
             color: '$brandSolid',
@@ -111,6 +112,7 @@ export namespace OptionCardStyles {
   export const Name = styled('span', {
     flex: 1,
     fontSize: '$normal',
+    fontWeight: '$medium',
     lineHeight: '$normal',
     textAlign: 'left',
 
