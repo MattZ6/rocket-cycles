@@ -9,8 +9,6 @@ import {
   redDark,
   grass,
   grassDark,
-  orangeDark,
-  orange,
 } from '@radix-ui/colors'
 import { createStitches } from '@stitches/react'
 
@@ -38,12 +36,13 @@ const { globalCss, createTheme, theme, styled, keyframes } = createStitches({
       brandSolidHover: blue.blue10,
       brandHighContrastText: blueDark.blue12,
 
+      successElementBackground: grass.grass3,
+      successBorder: slate.slate6,
       successSolid: grass.grass9,
       successSolidHover: grass.grass10,
 
-      pendingSolid: orange.orange9,
-      pendingSolidHover: orange.orange10,
-
+      dangerElementBackground: red.red3,
+      dangerBorder: red.red6,
       dangerSolid: red.red9,
       dangerSolidHover: red.red10,
 
@@ -133,12 +132,13 @@ const darkTheme = createTheme({
     brandSolidHover: blueDark.blue10,
     brandHighContrastText: blueDark.blue12,
 
+    successElementBackground: grassDark.grass3,
+    successBorder: grassDark.grass6,
     successSolid: grassDark.grass9,
     successSolidHover: grassDark.grass10,
 
-    pendingSolid: orangeDark.orange9,
-    pendingSolidHover: orangeDark.orange10,
-
+    dangerElementBackground: redDark.red3,
+    dangerBorder: redDark.red6,
     dangerSolid: redDark.red9,
     dangerSolidHover: redDark.red10,
 
