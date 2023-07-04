@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next'
 
-import { Page } from '@components/Page'
 import { Block } from '@components/Block'
+import { Page } from '@components/Page'
 
 import { HistoryPageStyles as Styles } from './styles'
 

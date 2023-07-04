@@ -23,7 +23,9 @@ export function AboutSection() {
         <BlockRow.Root>
           <BlockRow.Content>
             <BlockRow.Title>{t('about.version.title')}</BlockRow.Title>
-            <BlockRow.Description>{t('about.version.description')}</BlockRow.Description>
+            <BlockRow.Description>
+              {t('about.version.description')}
+            </BlockRow.Description>
           </BlockRow.Content>
 
           <BlockRow.Right>
@@ -56,7 +58,9 @@ export function AboutSection() {
         <BlockRow.Root>
           <BlockRow.Content>
             <BlockRow.Title>{t('about.commit.title')}</BlockRow.Title>
-            <BlockRow.Description>{t('about.commit.description')}</BlockRow.Description>
+            <BlockRow.Description>
+              {t('about.commit.description')}
+            </BlockRow.Description>
           </BlockRow.Content>
 
           <BlockRow.Right>

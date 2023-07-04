@@ -4,7 +4,8 @@ export const app = {
   commitHash: String(import.meta.env.VITE_APP_COMMIT_REF ?? ''),
 
   github: {
-    url: 'https://github.com/MattZ6/ig-timer',
+    url: 'https://github.com/MattZ6/rocket-cycles',
+    name: 'rocket-cycles',
   },
 
   author: {
