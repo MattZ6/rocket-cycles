@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next'
 
 import { app } from '@config/app'
 
-import { Section } from '@components/Section'
+import { Block, BlockRow } from '@components/Block'
 import { Tooltip } from '@components/Tooltip'
 
 import Avatar from '@assets/avatar.jpg'
@@ -14,50 +14,74 @@ export function AboutSection() {
   const { t } = useTranslation('settings')
 
   return (
-    <Section.Root title={t('about.title')}>
-      <Section.Row
-        title={t('about.version.title')}
-        description={t('about.version.description')}
-      >
-        <Styles.Version>v{app.version}</Styles.Version>
-      </Section.Row>
+    <Block.Root>
+      <Block.Header>
+        <Block.Title>{t('about.title')}</Block.Title>
+      </Block.Header>
 
-      <Section.Separator></Section.Separator>
+      <Block.Content withPadding>
+        <BlockRow.Root>
+          <BlockRow.Content>
+            <BlockRow.Title>{t('about.version.title')}</BlockRow.Title>
+            <BlockRow.Description>{t('about.version.description')}</BlockRow.Description>
+          </BlockRow.Content>
 
-      <Section.Row
-        title={t('about.repository.title')}
-        description={t('about.repository.description')}
-      >
-        <Tooltip content={t('about.repository.link.tooltip')}>
-          <Styles.ExternalLink href={app.github.url} target="_blank">
-            <GithubLogo aria-hidden size={20} />
-            ig-timer
-          </Styles.ExternalLink>
-        </Tooltip>
-      </Section.Row>
+          <BlockRow.Right>
+            <Styles.Version>v{app.version}</Styles.Version>
+          </BlockRow.Right>
+        </BlockRow.Root>
 
-      <Section.Separator></Section.Separator>
+        <Block.Separator></Block.Separator>
 
-      <Section.Row
-        title={t('about.commit.title')}
-        description={t('about.commit.description')}
-      >
-        <Styles.CommitHash>{app.commitHash}</Styles.CommitHash>
-      </Section.Row>
+        <BlockRow.Root>
+          <BlockRow.Content>
+            <BlockRow.Title>{t('about.repository.title')}</BlockRow.Title>
+            <BlockRow.Description>
+              {t('about.repository.description')}
+            </BlockRow.Description>
+          </BlockRow.Content>
 
-      <Section.Separator></Section.Separator>
+          <BlockRow.Right>
+            <Tooltip content={t('about.repository.link.tooltip')}>
+              <Styles.ExternalLink href={app.github.url} target="_blank">
+                <GithubLogo aria-hidden size={20} />
+                ig-timer
+              </Styles.ExternalLink>
+            </Tooltip>
+          </BlockRow.Right>
+        </BlockRow.Root>
 
-      <Section.Row
-        title={t('about.author.title')}
-        description={app.author.name}
-      >
-        <Tooltip content={t('about.author.link.tooltip')}>
-          <Styles.ExternalLink href={app.author.github.url} target="_blank">
-            <Styles.Avatar loading="lazy" src={Avatar} alt="" />
-            {app.author.github.user}
-          </Styles.ExternalLink>
-        </Tooltip>
-      </Section.Row>
-    </Section.Root>
+        <Block.Separator></Block.Separator>
+
+        <BlockRow.Root>
+          <BlockRow.Content>
+            <BlockRow.Title>{t('about.commit.title')}</BlockRow.Title>
+            <BlockRow.Description>{t('about.commit.description')}</BlockRow.Description>
+          </BlockRow.Content>
+
+          <BlockRow.Right>
+            <Styles.CommitHash>{app.commitHash}</Styles.CommitHash>
+          </BlockRow.Right>
+        </BlockRow.Root>
+
+        <Block.Separator></Block.Separator>
+
+        <BlockRow.Root>
+          <BlockRow.Content>
+            <BlockRow.Title>{t('about.author.title')}</BlockRow.Title>
+            <BlockRow.Description>{app.author.name}</BlockRow.Description>
+          </BlockRow.Content>
+
+          <BlockRow.Right>
+            <Tooltip content={t('about.author.link.tooltip')}>
+              <Styles.ExternalLink href={app.author.github.url} target="_blank">
+                <Styles.Avatar loading="lazy" src={Avatar} alt="" />
+                {app.author.github.user}
+              </Styles.ExternalLink>
+            </Tooltip>
+          </BlockRow.Right>
+        </BlockRow.Root>
+      </Block.Content>
+    </Block.Root>
   )
 }
