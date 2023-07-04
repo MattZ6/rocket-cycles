@@ -1,0 +1,15 @@
+{
+  "title": "Histórico",
+  "tasks": {
+    "title": "Tarefas",
+    "description": "Descrição",
+    "duration": "Duração",
+    "start": "Início",
+    "status": {
+      "title": "Status",
+      "done": "Concluído",
+      "stopped": "Interrompido",
+      "in_progress": "Em andamento"
+    }
+  }
+}

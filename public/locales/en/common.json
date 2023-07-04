@@ -1,0 +1,10 @@
+{
+  "links": {
+    "timer": "Timer",
+    "history": "History",
+    "settings": "Settings"
+  },
+  "author": {
+    "created_by": "Created by"
+  }
+}

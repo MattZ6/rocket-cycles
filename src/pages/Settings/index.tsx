@@ -1,12 +1,16 @@
+import { useTranslation } from 'react-i18next'
+
 import { Page } from '@components/Page'
 
 import { AboutSection, AppearanceSection } from './component'
 
 export default function SettingsPage() {
+  const { t } = useTranslation('settings')
+
   return (
     <Page.Root>
       <Page.Header>
-        <Page.Title>Settings</Page.Title>
+        <Page.Title>{t('title')}</Page.Title>
       </Page.Header>
 
       <Page.Content>

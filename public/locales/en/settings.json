@@ -1,0 +1,38 @@
+{
+  "title": "Settings",
+  "appearance": {
+    "title": "Appearance",
+    "locale": {
+      "title": "Language",
+      "description": "Select platform language"
+    },
+    "theme": {
+      "title": "Interface theme",
+      "description": "Customize your workspace theme"
+    }
+  },
+  "about": {
+    "title": "About",
+    "version": {
+      "title": "Version",
+      "description": "Useful for debug purposes"
+    },
+    "repository": {
+      "title": "Repository",
+      "description": "Project page on GitHub",
+      "link": {
+        "tooltip": "View on GitHub"
+      }
+    },
+    "commit": {
+      "title": "Commit hash",
+      "description": "SHA from commit that generates the build"
+    },
+    "author": {
+      "title": "Author",
+      "link": {
+        "tooltip": "View on GitHub"
+      }
+    }
+  }
+}
