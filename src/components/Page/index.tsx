@@ -1,18 +1,17 @@
-import { ReactNode } from 'react'
+// import { ReactNode } from 'react'
 
-import { PageStyles as Styles } from './styles'
+import {
+  PageContent,
+  PageDescription,
+  PageHeader,
+  PageRoot,
+  PageTitle,
+} from './components'
 
-type Props = {
-  title: string
-  children: ReactNode
-}
-
-export function Page({ title, children }: Props) {
-  return (
-    <Styles.Container>
-      <Styles.Title>{title}</Styles.Title>
-
-      <Styles.Content>{children}</Styles.Content>
-    </Styles.Container>
-  )
+export namespace Page {
+  export const Root = PageRoot
+  export const Header = PageHeader
+  export const Title = PageTitle
+  export const Description = PageDescription
+  export const Content = PageContent
 }
