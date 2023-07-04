@@ -1,3 +1,5 @@
+import { useTranslation } from 'react-i18next'
+
 import { useTheme } from '@hooks/useTheme'
 
 import { Section } from '@components/Section'
@@ -6,13 +8,22 @@ import { OptionCard } from './components'
 import { AppearanceSectionStyles as Styles } from './styles'
 
 export function AppearanceSection() {
+  const { t } = useTranslation('settings')
   const { options, theme, selectTheme } = useTheme()
 
   return (
-    <Section.Root title="Appearance">
+    <Section.Root title={t('appearance.title')}>
+      {/* <Section.Row
+        title={t('appearance.locale.title')}
+        description={t('appearance.locale.description')}
+      >
+      </Section.Row> */}
+
+      {/* <Section.Separator></Section.Separator> */}
+
       <Section.Field
-        title="Interface theme"
-        description="Customize your workspace theme"
+        title={t('appearance.theme.title')}
+        description={t('appearance.theme.description')}
       >
         <Styles.ThemesList role="list">
           {options.map((option) => (

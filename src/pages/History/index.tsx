@@ -1,24 +1,28 @@
+import { useTranslation } from 'react-i18next'
+
 import { Page } from '@components/Page'
 import { Section } from '@components/Section'
 
 import { HistoryPageStyles as Styles } from './styles'
 
 export default function HistoryPage() {
+  const { t } = useTranslation('history')
+
   return (
     <Page.Root>
       <Page.Header>
-        <Page.Title>History</Page.Title>
+        <Page.Title>{t('title')}</Page.Title>
       </Page.Header>
 
       <Page.Content>
-        <Section.Root title="Tasks" withoutInternalPadding>
+        <Section.Root title={t('tasks.title')} withoutInternalPadding>
           <Styles.Table>
             <Styles.TableHead>
               <tr>
-                <th>Description</th>
-                <th>Duration</th>
-                <th>Start</th>
-                <th>Status</th>
+                <th>{t('tasks.description')}</th>
+                <th>{t('tasks.duration')}</th>
+                <th>{t('tasks.start')}</th>
+                <th>{t('tasks.status.title')}</th>
               </tr>
             </Styles.TableHead>
 
@@ -28,7 +32,9 @@ export default function HistoryPage() {
                 <td>20 minutes</td>
                 <td>2 days ago</td>
                 <td>
-                  <Styles.Status statusColor="success">Done</Styles.Status>
+                  <Styles.Status statusColor="success">
+                    {t('tasks.status.done')}
+                  </Styles.Status>
                 </td>
               </tr>
 
@@ -37,7 +43,9 @@ export default function HistoryPage() {
                 <td>15 minutes</td>
                 <td>2 days ago</td>
                 <td>
-                  <Styles.Status statusColor="failure">Stopped</Styles.Status>
+                  <Styles.Status statusColor="failure">
+                    {t('tasks.status.stopped')}
+                  </Styles.Status>
                 </td>
               </tr>
 
@@ -47,7 +55,7 @@ export default function HistoryPage() {
                 <td>2 days ago</td>
                 <td>
                   <Styles.Status statusColor="inProgress">
-                    In progress
+                    {t('tasks.status.in_progress')}
                   </Styles.Status>
                 </td>
               </tr>

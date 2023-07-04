@@ -1,0 +1,15 @@
+{
+  "title": "History",
+  "tasks": {
+    "title": "Tasks",
+    "description": "Description",
+    "duration": "Duration",
+    "start": "Start",
+    "status": {
+      "title": "Status",
+      "done": "Done",
+      "stopped": "Stopped",
+      "in_progress": "In progress"
+    }
+  }
+}

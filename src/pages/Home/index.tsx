@@ -1,18 +1,21 @@
 import { Play } from '@phosphor-icons/react'
+import { useTranslation } from 'react-i18next'
 
 import { HomePageStyles as Styles } from './styles'
 
 export default function HomePage() {
+  const { t } = useTranslation('timer')
+
   return (
     <Styles.Container>
       <Styles.Form action="">
         <Styles.FieldsContainer>
-          <label htmlFor="task">Vou trabalhar em</label>
+          <label htmlFor="task">{t('i_will_work_in')}</label>
           <Styles.TaskInput
             type="text"
             id="task"
             list="task-suggestions"
-            placeholder="Dê um nome para sua atividade"
+            placeholder={t('name_your_activity')}
           />
 
           <datalist id="task-suggestions">
@@ -21,7 +24,7 @@ export default function HomePage() {
             <option value="Projeto 3" />
           </datalist>
 
-          <label htmlFor="minutesAmount">durante</label>
+          <label htmlFor="minutesAmount">{t('during')}</label>
           <Styles.MinutesAmountInput
             type="number"
             id="minutesAmount"
@@ -31,7 +34,7 @@ export default function HomePage() {
             max={60}
           />
 
-          <label htmlFor="minutesAmount">minutos.</label>
+          <label htmlFor="minutesAmount">{t('minutes')}.</label>
         </Styles.FieldsContainer>
 
         <Styles.CountdownContainer>
@@ -44,7 +47,7 @@ export default function HomePage() {
 
         <Styles.StartCountdownButton disabled type="submit">
           <Play size={24} />
-          Começar
+          {t('start')}
         </Styles.StartCountdownButton>
       </Styles.Form>
     </Styles.Container>
