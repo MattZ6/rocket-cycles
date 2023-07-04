@@ -4,10 +4,16 @@ import { AboutSection, AppearanceSection } from './component'
 
 export default function SettingsPage() {
   return (
-    <Page title="Settings">
-      <AppearanceSection />
+    <Page.Root>
+      <Page.Header>
+        <Page.Title>Settings</Page.Title>
+      </Page.Header>
 
-      <AboutSection />
-    </Page>
+      <Page.Content>
+        <AppearanceSection />
+
+        <AboutSection />
+      </Page.Content>
+    </Page.Root>
   )
 }
