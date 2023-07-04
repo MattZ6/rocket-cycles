@@ -21,6 +21,7 @@ export namespace ErrorStyles {
   export const Message = styled('p', {
     fontSize: '$default',
     lineHeight: '$default',
+    textAlign: 'center',
     color: '$defaultLowContrastText',
 
     marginTop: '$small',

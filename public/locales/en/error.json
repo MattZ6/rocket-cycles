@@ -1,0 +1,8 @@
+{
+  "title": "Ooh... Something went wrong!",
+  "description": {
+    "first_line": "We're currently investigating the problem.",
+    "second_line": "You can also refresh the page to try again."
+  },
+  "button": "Refresh the page"
+}

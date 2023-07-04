@@ -1,0 +1,8 @@
+{
+  "title": "Ops... Algo deu errado!",
+  "description": {
+    "first_line": "Já estamos investigando o problema.",
+    "second_line": "Você pode recarregar a página para tentar novamente."
+  },
+  "button": "Recarregar"
+}
