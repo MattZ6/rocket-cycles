@@ -1,6 +1,7 @@
 import { ReactNode } from 'react'
 import { BrowserRouter } from 'react-router-dom'
 
+import { CyclesProvider } from './Cycles'
 import { ThemeProvider } from './Theme'
 
 type Props = {
@@ -10,7 +11,9 @@ type Props = {
 export function Provider({ children }: Props) {
   return (
     <ThemeProvider>
-      <BrowserRouter>{children}</BrowserRouter>
+      <CyclesProvider>
+        <BrowserRouter>{children}</BrowserRouter>
+      </CyclesProvider>
     </ThemeProvider>
   )
 }
