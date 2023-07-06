@@ -1,4 +1,7 @@
+import { formatDistanceToNow } from 'date-fns'
 import { useTranslation } from 'react-i18next'
+
+import { useCycles } from '@hooks/useCycles'
 
 import { Block } from '@components/Block'
 import { Page } from '@components/Page'
@@ -7,6 +10,7 @@ import { HistoryPageStyles as Styles } from './styles'
 
 export default function HistoryPage() {
   const { t } = useTranslation('history')
+  const { cycles } = useCycles()
 
   return (
     <Page.Root>
@@ -32,38 +36,37 @@ export default function HistoryPage() {
               </Styles.TableHead>
 
               <Styles.TableBody>
-                <tr>
-                  <td>Project #1</td>
-                  <td>20 minutes</td>
-                  <td>2 days ago</td>
-                  <td>
-                    <Styles.Status statusColor="success">
-                      {t('tasks.status.done')}
-                    </Styles.Status>
-                  </td>
-                </tr>
+                {cycles.map((cycle) => (
+                  <tr key={cycle.id}>
+                    <td>{cycle.task}</td>
+                    <td>{cycle.minutesAmount} minutes</td>
+                    <td>
+                      {formatDistanceToNow(new Date(cycle.startDate), {
+                        addSuffix: true,
+                        // locale: ptBR,
+                      })}
+                    </td>
+                    <td>
+                      {cycle.finishedDate && (
+                        <Styles.Status statusColor="success">
+                          {t('tasks.status.done')}
+                        </Styles.Status>
+                      )}
 
-                <tr>
-                  <td>Project #2</td>
-                  <td>15 minutes</td>
-                  <td>2 days ago</td>
-                  <td>
-                    <Styles.Status statusColor="failure">
-                      {t('tasks.status.stopped')}
-                    </Styles.Status>
-                  </td>
-                </tr>
+                      {cycle.interruptedDate && (
+                        <Styles.Status statusColor="failure">
+                          {t('tasks.status.stopped')}
+                        </Styles.Status>
+                      )}
 
-                <tr>
-                  <td>Project #3</td>
-                  <td>25 minutes</td>
-                  <td>2 days ago</td>
-                  <td>
-                    <Styles.Status statusColor="inProgress">
-                      {t('tasks.status.in_progress')}
-                    </Styles.Status>
-                  </td>
-                </tr>
+                      {!cycle.finishedDate && !cycle.interruptedDate && (
+                        <Styles.Status statusColor="inProgress">
+                          {t('tasks.status.in_progress')}
+                        </Styles.Status>
+                      )}
+                    </td>
+                  </tr>
+                ))}
               </Styles.TableBody>
             </Styles.Table>
           </Block.Content>
