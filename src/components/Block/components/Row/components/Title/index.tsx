@@ -1,7 +1,9 @@
+import { ReactNode } from 'react'
+
 import { RowTitleStyles as Styles } from './styles'
 
 type Props = {
-  children: string
+  children: ReactNode
 }
 
 export function RowTitle(props: Props) {

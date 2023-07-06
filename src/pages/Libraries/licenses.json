@@ -1,0 +1,354 @@
+{
+    "@commitlint/cli@17.6.6": {
+        "licenses": "MIT",
+        "repository": "https://github.com/conventional-changelog/commitlint",
+        "licenseUrl": "https://github.com/conventional-changelog/commitlint/raw/master/license.md",
+        "parents": "UNDEFINED"
+    },
+    "@commitlint/config-conventional@17.6.6": {
+        "licenses": "MIT",
+        "repository": "https://github.com/conventional-changelog/commitlint",
+        "licenseUrl": "https://github.com/conventional-changelog/commitlint/raw/master/license.md",
+        "parents": "UNDEFINED"
+    },
+    "@eslint-community/eslint-utils@4.4.0": {
+        "licenses": "MIT",
+        "repository": "https://github.com/eslint-community/eslint-utils",
+        "licenseUrl": "https://github.com/eslint-community/eslint-utils/raw/master/LICENSE",
+        "parents": "UNDEFINED"
+    },
+    "@eslint-community/regexpp@4.5.1": {
+        "licenses": "MIT",
+        "repository": "https://github.com/eslint-community/regexpp",
+        "licenseUrl": "https://github.com/eslint-community/regexpp/raw/master/LICENSE",
+        "parents": "UNDEFINED"
+    },
+    "@eslint/eslintrc@2.1.0": {
+        "licenses": "MIT",
+        "repository": "https://github.com/eslint/eslintrc",
+        "licenseUrl": "https://github.com/eslint/eslintrc/raw/master/LICENSE",
+        "parents": "UNDEFINED"
+    },
+    "@eslint/js@8.44.0": {
+        "licenses": "MIT",
+        "repository": "https://github.com/eslint/eslint",
+        "licenseUrl": "https://github.com/eslint/eslint/raw/master/LICENSE",
+        "parents": "UNDEFINED"
+    },
+    "@hookform/resolvers@3.1.1": {
+        "licenses": "MIT",
+        "repository": "https://github.com/react-hook-form/resolvers",
+        "licenseUrl": "https://github.com/react-hook-form/resolvers/raw/master/LICENSE",
+        "parents": "UNDEFINED"
+    },
+    "@phosphor-icons/react@2.0.10": {
+        "licenses": "MIT",
+        "repository": "https://github.com/phosphor-icons/react",
+        "licenseUrl": "https://github.com/phosphor-icons/react/raw/master/LICENSE",
+        "parents": "UNDEFINED"
+    },
+    "@radix-ui/colors@1.0.0": {
+        "licenses": "MIT",
+        "parents": "UNDEFINED"
+    },
+    "@radix-ui/react-select@1.2.2": {
+        "licenses": "MIT",
+        "repository": "https://github.com/radix-ui/primitives",
+        "licenseUrl": "https://github.com/radix-ui/primitives",
+        "parents": "UNDEFINED"
+    },
+    "@radix-ui/react-tooltip@1.0.6": {
+        "licenses": "MIT",
+        "repository": "https://github.com/radix-ui/primitives",
+        "licenseUrl": "https://github.com/radix-ui/primitives",
+        "parents": "UNDEFINED"
+    },
+    "@rocketseat/eslint-config@1.2.0": {
+        "licenses": "MIT",
+        "repository": "https://github.com/rocketseat/eslint-config-rocketseat",
+        "licenseUrl": "https://github.com/rocketseat/eslint-config-rocketseat",
+        "parents": "UNDEFINED"
+    },
+    "@stitches/react@1.2.8": {
+        "licenses": "MIT",
+        "repository": "https://github.com/modulz/stitches",
+        "licenseUrl": "https://github.com/modulz/stitches",
+        "parents": "UNDEFINED"
+    },
+    "@types/node@20.4.0": {
+        "licenses": "MIT",
+        "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped",
+        "licenseUrl": "https://github.com/DefinitelyTyped/DefinitelyTyped/raw/master/LICENSE",
+        "parents": "UNDEFINED"
+    },
+    "@types/react-dom@18.2.6": {
+        "licenses": "MIT",
+        "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped",
+        "licenseUrl": "https://github.com/DefinitelyTyped/DefinitelyTyped/raw/master/LICENSE",
+        "parents": "UNDEFINED"
+    },
+    "@types/react@18.2.14": {
+        "licenses": "MIT",
+        "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped",
+        "licenseUrl": "https://github.com/DefinitelyTyped/DefinitelyTyped/raw/master/LICENSE",
+        "parents": "UNDEFINED"
+    },
+    "@typescript-eslint/eslint-plugin@5.61.0": {
+        "licenses": "MIT",
+        "repository": "https://github.com/typescript-eslint/typescript-eslint",
+        "licenseUrl": "https://github.com/typescript-eslint/typescript-eslint/raw/master/LICENSE",
+        "parents": "UNDEFINED"
+    },
+    "@typescript-eslint/parser@5.61.0": {
+        "licenses": "BSD-2-Clause",
+        "repository": "https://github.com/typescript-eslint/typescript-eslint",
+        "licenseUrl": "https://github.com/typescript-eslint/typescript-eslint/raw/master/LICENSE",
+        "parents": "UNDEFINED"
+    },
+    "@typescript-eslint/scope-manager@5.61.0": {
+        "licenses": "MIT",
+        "repository": "https://github.com/typescript-eslint/typescript-eslint",
+        "licenseUrl": "https://github.com/typescript-eslint/typescript-eslint/raw/master/LICENSE",
+        "parents": "UNDEFINED"
+    },
+    "@typescript-eslint/type-utils@5.61.0": {
+        "licenses": "MIT",
+        "repository": "https://github.com/typescript-eslint/typescript-eslint",
+        "licenseUrl": "https://github.com/typescript-eslint/typescript-eslint/raw/master/LICENSE",
+        "parents": "UNDEFINED"
+    },
+    "@typescript-eslint/types@5.61.0": {
+        "licenses": "MIT",
+        "repository": "https://github.com/typescript-eslint/typescript-eslint",
+        "licenseUrl": "https://github.com/typescript-eslint/typescript-eslint/raw/master/LICENSE",
+        "parents": "UNDEFINED"
+    },
+    "@typescript-eslint/typescript-estree@5.61.0": {
+        "licenses": "BSD-2-Clause",
+        "repository": "https://github.com/typescript-eslint/typescript-eslint",
+        "licenseUrl": "https://github.com/typescript-eslint/typescript-eslint/raw/master/LICENSE",
+        "parents": "UNDEFINED"
+    },
+    "@typescript-eslint/utils@5.61.0": {
+        "licenses": "MIT",
+        "repository": "https://github.com/typescript-eslint/typescript-eslint",
+        "licenseUrl": "https://github.com/typescript-eslint/typescript-eslint/raw/master/LICENSE",
+        "parents": "UNDEFINED"
+    },
+    "@typescript-eslint/visitor-keys@5.61.0": {
+        "licenses": "MIT",
+        "repository": "https://github.com/typescript-eslint/typescript-eslint",
+        "licenseUrl": "https://github.com/typescript-eslint/typescript-eslint/raw/master/LICENSE",
+        "parents": "UNDEFINED"
+    },
+    "@vitejs/plugin-react@4.0.2": {
+        "licenses": "MIT",
+        "repository": "https://github.com/vitejs/vite-plugin-react",
+        "licenseUrl": "https://github.com/vitejs/vite-plugin-react/raw/master/LICENSE",
+        "parents": "UNDEFINED"
+    },
+    "date-fns@2.30.0": {
+        "licenses": "MIT",
+        "repository": "https://github.com/date-fns/date-fns",
+        "licenseUrl": "https://github.com/date-fns/date-fns/raw/master/LICENSE.md",
+        "parents": "UNDEFINED"
+    },
+    "eslint-config-prettier@8.8.0": {
+        "licenses": "MIT",
+        "repository": "https://github.com/prettier/eslint-config-prettier",
+        "licenseUrl": "https://github.com/prettier/eslint-config-prettier/raw/master/LICENSE",
+        "parents": "UNDEFINED"
+    },
+    "eslint-config-standard@17.1.0": {
+        "licenses": "MIT",
+        "repository": "https://github.com/standard/eslint-config-standard",
+        "licenseUrl": "https://github.com/standard/eslint-config-standard/raw/master/LICENSE",
+        "parents": "UNDEFINED"
+    },
+    "eslint-import-resolver-node@0.3.7": {
+        "licenses": "MIT",
+        "repository": "https://github.com/import-js/eslint-plugin-import",
+        "licenseUrl": "https://github.com/import-js/eslint-plugin-import/raw/master/LICENSE",
+        "parents": "UNDEFINED"
+    },
+    "eslint-module-utils@2.8.0": {
+        "licenses": "MIT",
+        "repository": "https://github.com/import-js/eslint-plugin-import",
+        "licenseUrl": "https://github.com/import-js/eslint-plugin-import/raw/master/LICENSE",
+        "parents": "UNDEFINED"
+    },
+    "eslint-plugin-es@4.1.0": {
+        "licenses": "MIT",
+        "repository": "https://github.com/mysticatea/eslint-plugin-es",
+        "licenseUrl": "https://github.com/mysticatea/eslint-plugin-es/raw/master/LICENSE",
+        "parents": "UNDEFINED"
+    },
+    "eslint-plugin-import-helpers@1.3.1": {
+        "licenses": "MIT",
+        "repository": "https://github.com/Tibfib/eslint-plugin-import-helpers",
+        "licenseUrl": "https://github.com/Tibfib/eslint-plugin-import-helpers",
+        "parents": "UNDEFINED"
+    },
+    "eslint-plugin-import@2.27.5": {
+        "licenses": "MIT",
+        "repository": "https://github.com/import-js/eslint-plugin-import",
+        "licenseUrl": "https://github.com/import-js/eslint-plugin-import/raw/master/LICENSE",
+        "parents": "UNDEFINED"
+    },
+    "eslint-plugin-jsx-a11y@6.7.1": {
+        "licenses": "MIT",
+        "repository": "https://github.com/jsx-eslint/eslint-plugin-jsx-a11y",
+        "licenseUrl": "https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/raw/master/LICENSE.md",
+        "parents": "UNDEFINED"
+    },
+    "eslint-plugin-n@15.7.0": {
+        "licenses": "MIT",
+        "repository": "https://github.com/eslint-community/eslint-plugin-n",
+        "licenseUrl": "https://github.com/eslint-community/eslint-plugin-n/raw/master/LICENSE",
+        "parents": "UNDEFINED"
+    },
+    "eslint-plugin-prettier@4.2.1": {
+        "licenses": "MIT",
+        "repository": "https://github.com/prettier/eslint-plugin-prettier",
+        "licenseUrl": "https://github.com/prettier/eslint-plugin-prettier/raw/master/LICENSE.md",
+        "parents": "UNDEFINED"
+    },
+    "eslint-plugin-promise@6.1.1": {
+        "licenses": "ISC",
+        "repository": "https://github.com/eslint-community/eslint-plugin-promise",
+        "licenseUrl": "https://github.com/eslint-community/eslint-plugin-promise/raw/master/LICENSE.md",
+        "parents": "UNDEFINED"
+    },
+    "eslint-plugin-react-hooks@4.6.0": {
+        "licenses": "MIT",
+        "repository": "https://github.com/facebook/react",
+        "licenseUrl": "https://github.com/facebook/react/raw/master/LICENSE",
+        "parents": "UNDEFINED"
+    },
+    "eslint-plugin-react@7.32.2": {
+        "licenses": "MIT",
+        "repository": "https://github.com/jsx-eslint/eslint-plugin-react",
+        "licenseUrl": "https://github.com/jsx-eslint/eslint-plugin-react/raw/master/LICENSE",
+        "parents": "UNDEFINED"
+    },
+    "eslint-scope@7.2.0": {
+        "licenses": "BSD-2-Clause",
+        "repository": "https://github.com/eslint/eslint-scope",
+        "licenseUrl": "https://github.com/eslint/eslint-scope/raw/master/LICENSE",
+        "parents": "UNDEFINED"
+    },
+    "eslint-utils@3.0.0": {
+        "licenses": "MIT",
+        "repository": "https://github.com/mysticatea/eslint-utils",
+        "licenseUrl": "https://github.com/mysticatea/eslint-utils/raw/master/LICENSE",
+        "parents": "UNDEFINED"
+    },
+    "eslint-visitor-keys@3.4.1": {
+        "licenses": "Apache-2.0",
+        "repository": "https://github.com/eslint/eslint-visitor-keys",
+        "licenseUrl": "https://github.com/eslint/eslint-visitor-keys/raw/master/LICENSE",
+        "parents": "UNDEFINED"
+    },
+    "eslint@8.44.0": {
+        "licenses": "MIT",
+        "repository": "https://github.com/eslint/eslint",
+        "licenseUrl": "https://github.com/eslint/eslint/raw/master/LICENSE",
+        "parents": "UNDEFINED"
+    },
+    "husky@8.0.3": {
+        "licenses": "MIT",
+        "repository": "https://github.com/typicode/husky",
+        "licenseUrl": "https://github.com/typicode/husky/raw/master/LICENSE",
+        "parents": "UNDEFINED"
+    },
+    "i18next-browser-languagedetector@7.1.0": {
+        "licenses": "MIT",
+        "repository": "https://github.com/i18next/i18next-browser-languageDetector",
+        "licenseUrl": "https://github.com/i18next/i18next-browser-languageDetector/raw/master/LICENSE",
+        "parents": "UNDEFINED"
+    },
+    "i18next-http-backend@2.2.1": {
+        "licenses": "MIT",
+        "repository": "https://github.com/i18next/i18next-http-backend",
+        "licenseUrl": "https://github.com/i18next/i18next-http-backend/raw/master/licence",
+        "parents": "UNDEFINED"
+    },
+    "i18next@23.2.7": {
+        "licenses": "MIT",
+        "repository": "https://github.com/i18next/i18next",
+        "licenseUrl": "https://github.com/i18next/i18next/raw/master/LICENSE",
+        "parents": "UNDEFINED"
+    },
+    "immer@10.0.2": {
+        "licenses": "MIT",
+        "repository": "https://github.com/immerjs/immer",
+        "licenseUrl": "https://github.com/immerjs/immer/raw/master/LICENSE",
+        "parents": "UNDEFINED"
+    },
+    "lint-staged@13.2.3": {
+        "licenses": "MIT",
+        "repository": "https://github.com/okonet/lint-staged",
+        "licenseUrl": "https://github.com/okonet/lint-staged/raw/master/LICENSE",
+        "parents": "UNDEFINED"
+    },
+    "prettier-linter-helpers@1.0.0": {
+        "licenses": "MIT",
+        "repository": "https://github.com/prettier/prettier-linter-helpers",
+        "licenseUrl": "https://github.com/prettier/prettier-linter-helpers/raw/master/LICENSE.md",
+        "parents": "UNDEFINED"
+    },
+    "prettier@2.8.8": {
+        "licenses": "MIT",
+        "repository": "https://github.com/prettier/prettier",
+        "licenseUrl": "https://github.com/prettier/prettier/raw/master/LICENSE",
+        "parents": "UNDEFINED"
+    },
+    "react-dom@18.2.0": {
+        "licenses": "MIT",
+        "repository": "https://github.com/facebook/react",
+        "licenseUrl": "https://github.com/facebook/react/raw/master/LICENSE",
+        "parents": "UNDEFINED"
+    },
+    "react-hook-form@7.45.1": {
+        "licenses": "MIT",
+        "repository": "https://github.com/react-hook-form/react-hook-form",
+        "licenseUrl": "https://github.com/react-hook-form/react-hook-form/raw/master/LICENSE",
+        "parents": "UNDEFINED"
+    },
+    "react-i18next@13.0.1": {
+        "licenses": "MIT",
+        "repository": "https://github.com/i18next/react-i18next",
+        "licenseUrl": "https://github.com/i18next/react-i18next/raw/master/LICENSE",
+        "parents": "UNDEFINED"
+    },
+    "react-router-dom@6.14.1": {
+        "licenses": "MIT",
+        "repository": "https://github.com/remix-run/react-router",
+        "licenseUrl": "https://github.com/remix-run/react-router/raw/master/LICENSE.md",
+        "parents": "UNDEFINED"
+    },
+    "react@18.2.0": {
+        "licenses": "MIT",
+        "repository": "https://github.com/facebook/react",
+        "licenseUrl": "https://github.com/facebook/react/raw/master/LICENSE",
+        "parents": "UNDEFINED"
+    },
+    "typescript@5.1.6": {
+        "licenses": "Apache-2.0",
+        "repository": "https://github.com/Microsoft/TypeScript",
+        "licenseUrl": "https://github.com/Microsoft/TypeScript/raw/master/LICENSE.txt",
+        "parents": "UNDEFINED"
+    },
+    "vite@4.4.0": {
+        "licenses": "MIT",
+        "repository": "https://github.com/vitejs/vite",
+        "licenseUrl": "https://github.com/vitejs/vite/raw/master/LICENSE.md",
+        "parents": "UNDEFINED"
+    },
+    "zod@3.21.4": {
+        "licenses": "MIT",
+        "repository": "https://github.com/colinhacks/zod",
+        "licenseUrl": "https://github.com/colinhacks/zod/raw/master/LICENSE",
+        "parents": "UNDEFINED"
+    }
+}

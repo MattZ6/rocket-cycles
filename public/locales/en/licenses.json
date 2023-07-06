@@ -1,0 +1,11 @@
+{
+  "title": "Third-Party Software",
+  "description": "Software that helped us",
+  "libraries": {
+    "title": "Libraries",
+    "license": "Under {{lib}} license",
+    "repository": {
+      "title": "View repository"
+    }
+  }
+}
