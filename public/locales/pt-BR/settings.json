@@ -15,7 +15,10 @@
     "title": "Sobre",
     "version": {
       "title": "Versão",
-      "description": "Para motivos de debug"
+      "description": "Para motivos de debug",
+      "link": {
+        "tooltip": "Ver changelog"
+      }
     },
     "repository": {
       "title": "Repositório",
