@@ -65,6 +65,8 @@ function ThemeProvider({ children }: ThemeProviderTypes.Props) {
 
     html.current.classList.add(THEMES_CLASSES[colorMode])
     html.current.classList.remove(classToRemove)
+
+    html.current.style.colorScheme = colorMode
   }
 
   useEffect(() => LocalStorageUtils.store(KEY, theme), [theme])
