@@ -4,8 +4,8 @@ export const app = {
   commitHash: String(import.meta.env.VITE_APP_COMMIT_REF ?? ''),
 
   github: {
-    url: 'https://github.com/MattZ6/rocket-cycles',
-    name: 'rocket-cycles',
+    url: String(import.meta.env.VITE_APP_REPOSITORY_URL ?? ''),
+    name: String(import.meta.env.VITE_APP_REPOSITORY_NAME ?? ''),
   },
 
   author: {

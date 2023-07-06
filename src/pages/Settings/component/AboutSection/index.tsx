@@ -47,7 +47,7 @@ export function AboutSection() {
             <Tooltip content={t('about.repository.link.tooltip')}>
               <Styles.ExternalLink href={app.github.url} target="_blank">
                 <GithubLogo aria-hidden size={20} />
-                ig-timer
+                {app.github.name}
               </Styles.ExternalLink>
             </Tooltip>
           </BlockRow.Right>
