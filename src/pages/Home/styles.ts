@@ -25,119 +25,19 @@ export namespace HomePageStyles {
 
     margin: '0 auto',
 
+    '> form': {
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      gap: '$large',
+    },
+
     '@media (prefers-reduced-motion: no-preference)': {
       animation: `${fadeInAnimation} 150ms ease-out`,
     },
   })
 
-  export const Form = styled('form', {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    gap: '$large',
-  })
-
-  export const FieldsContainer = styled('div', {
-    width: '100%',
-
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    flexWrap: 'wrap',
-    gap: '$small',
-
-    color: '$defaultHighContrastText',
-    fontSize: '$medium',
-    fontWeight: '$bold',
-  })
-
-  const BaseInput = styled('input', {
-    backgroundColor: 'transparent',
-
-    height: '40px',
-    border: 0,
-    borderBottom: '2px solid $defaultElementBorder',
-
-    color: '$defaultHighContrastText',
-    fontSize: 'inherit',
-    fontWeight: '$bold',
-
-    paddingLeft: '$small',
-    paddingRight: '$small',
-
-    boxShadow: 'none',
-    outline: 'none',
-
-    caretColor: '$brandSolid',
-
-    '@media (prefers-reduced-motion: no-preference)': {
-      transition: '$default',
-      transitionProperty: 'border-color',
-    },
-
-    '&::placeholder': {
-      color: '$defaultLowContrastText',
-      fontWeight: '$regular',
-    },
-
-    '&:focus-visible': {
-      borderColor: '$brandSolid',
-    },
-  })
-
-  export const TaskInput = styled(BaseInput, {
-    textAlign: 'center',
-    width: '320px',
-
-    '&::-webkit-calendar-picker-indicator': {
-      display: 'none !important',
-    },
-  })
-
-  export const MinutesAmountInput = styled(BaseInput, {
-    textAlign: 'center',
-    width: '64px',
-  })
-
-  export const CountdownContainer = styled('div', {
-    display: 'flex',
-    gap: '$normal',
-
-    userSelect: 'none',
-  })
-
-  export const CountdownNumber = styled('span', {
-    fontFamily: '$mono',
-    fontSize: '$countdown',
-    lineHeight: '$countdown',
-    color: '$defaultHighContrastText',
-
-    backgroundColor: '$defaultElementBackground',
-    paddingTop: '$medium',
-    paddingBottom: '$medium',
-    paddingLeft: '$normal',
-    paddingRight: '$normal',
-
-    borderRadius: '$small',
-  })
-
-  export const CountdownSeparator = styled('span', {
-    display: 'flex',
-    justifyContent: 'center',
-
-    fontFamily: '$mono',
-    fontSize: '$countdown',
-    lineHeight: '$countdown',
-    color: '$brandSolid',
-
-    paddingTop: '$medium',
-    paddingBottom: '$medium',
-
-    width: '64px',
-    overflow: 'hidden',
-  })
-
-  export const StartCountdownButton = styled('button', {
+  const BaseButton = styled('button', {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
@@ -151,9 +51,6 @@ export namespace HomePageStyles {
 
     fontWeight: '$bold',
 
-    backgroundColor: '$brandSolid',
-    color: '$brandHighContrastText',
-
     outline: '2px solid transparent',
 
     '@media (prefers-reduced-motion: no-preference)': {
@@ -165,17 +62,35 @@ export namespace HomePageStyles {
       cursor: 'pointer',
     },
 
-    '&:not(:disabled):hover': {
-      backgroundColor: '$brandSolidHover',
-    },
-
     '&:disabled': {
       opacity: 0.7,
       cursor: 'not-allowed',
     },
+  })
+
+  export const StartCountdownButton = styled(BaseButton, {
+    backgroundColor: '$brandSolid',
+    color: '$brandHighContrastText',
+
+    '&:not(:disabled):hover': {
+      backgroundColor: '$brandSolidHover',
+    },
 
     '&:focus-visible': {
       outlineColor: '$brandBorder',
+    },
+  })
+
+  export const StopCountdownButton = styled(BaseButton, {
+    backgroundColor: '$dangerSolid',
+    color: '$dangerHighContrastText',
+
+    '&:not(:disabled):hover': {
+      backgroundColor: '$dangerSolidHover',
+    },
+
+    '&:focus-visible': {
+      outlineColor: '$dangerBorder',
     },
   })
 }

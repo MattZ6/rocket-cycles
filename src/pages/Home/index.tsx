@@ -1,55 +1,64 @@
-import { Play } from '@phosphor-icons/react'
+import { zodResolver } from '@hookform/resolvers/zod'
+import { HandPalm, Play } from '@phosphor-icons/react'
+import { FormProvider, useForm } from 'react-hook-form'
 import { useTranslation } from 'react-i18next'
 
+import { useCycles } from '@hooks/useCycles'
+
+import { Countdown, NewCycleForm } from './components'
+import { NewCycleFormData, newCycleSchema } from './scheme'
 import { HomePageStyles as Styles } from './styles'
 
 export default function HomePage() {
   const { t } = useTranslation('timer')
 
+  const { activeCycle, createNewCycle, interruptCurrentCycle } = useCycles()
+
+  const form = useForm<NewCycleFormData>({
+    resolver: zodResolver(newCycleSchema),
+    defaultValues: {
+      task: '',
+      minutesAmount: 0,
+    },
+  })
+
+  const { handleSubmit, watch, reset } = form
+
+  function handleCreateNewCycle(data: NewCycleFormData) {
+    createNewCycle(data)
+    reset()
+  }
+
+  const task = watch('task')
+  const isSubmitDisabled = !task
+
   return (
     <Styles.Container>
-      <Styles.Form action="">
-        <Styles.FieldsContainer>
-          <label htmlFor="task">{t('i_will_work_in')}</label>
-          <Styles.TaskInput
-            type="text"
-            id="task"
-            list="task-suggestions"
-            placeholder={t('name_your_activity')}
-          />
+      <form onSubmit={handleSubmit(handleCreateNewCycle)}>
+        <FormProvider {...form}>
+          <NewCycleForm />
+        </FormProvider>
 
-          <datalist id="task-suggestions">
-            <option value="Projeto 1" />
-            <option value="Projeto 2" />
-            <option value="Projeto 3" />
-          </datalist>
+        <Countdown />
 
-          <label htmlFor="minutesAmount">{t('during')}</label>
-          <Styles.MinutesAmountInput
-            type="number"
-            id="minutesAmount"
-            placeholder="00"
-            step={5}
-            min={5}
-            max={60}
-          />
-
-          <label htmlFor="minutesAmount">{t('minutes')}.</label>
-        </Styles.FieldsContainer>
-
-        <Styles.CountdownContainer>
-          <Styles.CountdownNumber>0</Styles.CountdownNumber>
-          <Styles.CountdownNumber>0</Styles.CountdownNumber>
-          <Styles.CountdownSeparator>:</Styles.CountdownSeparator>
-          <Styles.CountdownNumber>0</Styles.CountdownNumber>
-          <Styles.CountdownNumber>0</Styles.CountdownNumber>
-        </Styles.CountdownContainer>
-
-        <Styles.StartCountdownButton disabled type="submit">
-          <Play size={24} />
-          {t('start')}
-        </Styles.StartCountdownButton>
-      </Styles.Form>
+        {activeCycle ? (
+          <Styles.StopCountdownButton
+            onClick={interruptCurrentCycle}
+            type="button"
+          >
+            <HandPalm size={24} />
+            {t('start')}
+          </Styles.StopCountdownButton>
+        ) : (
+          <Styles.StartCountdownButton
+            disabled={isSubmitDisabled}
+            type="submit"
+          >
+            <Play size={24} />
+            {t('start')}
+          </Styles.StartCountdownButton>
+        )}
+      </form>
     </Styles.Container>
   )
 }
