@@ -33,6 +33,13 @@
       "link": {
         "tooltip": "View on GitHub"
       }
+    },
+    "license": {
+      "title": "Third-party software",
+      "description": "Software that helped us",
+      "link": {
+        "title": "View page"
+      }
     }
   }
 }

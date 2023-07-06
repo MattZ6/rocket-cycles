@@ -1,0 +1,11 @@
+{
+  "title": "Software de terceiros",
+  "description": "Software que nos ajudou",
+  "libraries": {
+    "title": "Bibliotecas",
+    "license": "Licença {{lib}}",
+    "repository": {
+      "title": "Ver repositório"
+    }
+  }
+}

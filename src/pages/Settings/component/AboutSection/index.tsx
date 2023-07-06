@@ -1,4 +1,4 @@
-import { GithubLogo } from '@phosphor-icons/react'
+import { GithubLogo, ArrowUpRight } from '@phosphor-icons/react'
 import { useTranslation } from 'react-i18next'
 
 import { app } from '@config/app'
@@ -83,6 +83,24 @@ export function AboutSection() {
                 {app.author.github.user}
               </Styles.ExternalLink>
             </Tooltip>
+          </BlockRow.Right>
+        </BlockRow.Root>
+
+        <Block.Separator></Block.Separator>
+
+        <BlockRow.Root>
+          <BlockRow.Content>
+            <BlockRow.Title>{t('about.license.title')}</BlockRow.Title>
+            <BlockRow.Description>
+              {t('about.license.description')}
+            </BlockRow.Description>
+          </BlockRow.Content>
+
+          <BlockRow.Right>
+            <Styles.InternalLink to="/libraries">
+              {t('about.license.link.title')}
+              <ArrowUpRight aria-hidden size={16} />
+            </Styles.InternalLink>
           </BlockRow.Right>
         </BlockRow.Root>
       </Block.Content>
