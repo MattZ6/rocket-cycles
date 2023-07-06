@@ -13,6 +13,7 @@
           "module",
           "/^@config/",
           "/^@contexts/",
+          "/^@reducers/",
           "/^@hooks/",
           "/^@services/",
           "/^@layouts/",
