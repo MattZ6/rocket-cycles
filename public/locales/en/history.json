@@ -5,6 +5,8 @@
     "description": "Description",
     "duration": "Duration",
     "start": "Start",
+    "minute_one": "{{count}} minute",
+    "minute_other": "{{count}} minutes",
     "status": {
       "title": "Status",
       "done": "Done",
