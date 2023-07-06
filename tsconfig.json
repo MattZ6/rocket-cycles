@@ -23,6 +23,7 @@
       "@services/*": ["./services/*"],
       "@layouts/*": ["./layouts/*"],
       "@pages/*": ["./pages/*"],
+      "@reducers/*": ["./reducers/*"],
       "@styles/*": ["./styles/*"],
       "@assets/*": ["./assets/*"],
       "@utils/*": ["./utils/*"],

@@ -17,6 +17,7 @@ export default defineConfig({
       { find: '@layouts', replacement: resolvePath('layouts') },
       { find: '@locales', replacement: resolvePath('locales') },
       { find: '@pages', replacement: resolvePath('pages') },
+      { find: '@reducers', replacement: resolvePath('reducers') },
       { find: '@providers', replacement: resolvePath('providers') },
       { find: '@styles', replacement: resolvePath('styles') },
       { find: '@utils', replacement: resolvePath('utils') },
