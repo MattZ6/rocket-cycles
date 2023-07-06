@@ -1,4 +1,4 @@
-import { GithubLogo, ArrowUpRight } from '@phosphor-icons/react'
+import { GithubLogo, ArrowUpRight, Scroll } from '@phosphor-icons/react'
 import { useTranslation } from 'react-i18next'
 
 import { app } from '@config/app'
@@ -29,7 +29,15 @@ export function AboutSection() {
           </BlockRow.Content>
 
           <BlockRow.Right>
-            <Styles.Version>v{app.version}</Styles.Version>
+            <Tooltip content={t('about.version.link.tooltip')}>
+              <Styles.ExternalLink
+                href={`${app.github.url}/releases/tag/v${app.version}`}
+                target="_blank"
+              >
+                <Scroll aria-hidden size={16} />
+                <Styles.Version>v{app.version}</Styles.Version>
+              </Styles.ExternalLink>
+            </Tooltip>
           </BlockRow.Right>
         </BlockRow.Root>
 
