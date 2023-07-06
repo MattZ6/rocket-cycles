@@ -1,4 +1,5 @@
 import { formatDistanceToNow } from 'date-fns'
+import { ptBR, enUS } from 'date-fns/locale'
 import { useTranslation } from 'react-i18next'
 
 import { useCycles } from '@hooks/useCycles'
@@ -8,8 +9,13 @@ import { Page } from '@components/Page'
 
 import { HistoryPageStyles as Styles } from './styles'
 
+const LOCALE_OPTIONS = {
+  'pt-BR': ptBR,
+  us: enUS,
+} as const
+
 export default function HistoryPage() {
-  const { t } = useTranslation('history')
+  const { t, i18n } = useTranslation('history')
   const { cycles } = useCycles()
 
   return (
@@ -39,11 +45,15 @@ export default function HistoryPage() {
                 {cycles.map((cycle) => (
                   <tr key={cycle.id}>
                     <td>{cycle.task}</td>
-                    <td>{cycle.minutesAmount} minutes</td>
+                    <td>{t('tasks.minute', { count: cycle.minutesAmount })}</td>
                     <td>
                       {formatDistanceToNow(new Date(cycle.startDate), {
                         addSuffix: true,
-                        // locale: ptBR,
+                        locale:
+                          LOCALE_OPTIONS[
+                            (i18n.language ??
+                              'us') as keyof typeof LOCALE_OPTIONS
+                          ],
                       })}
                     </td>
                     <td>
