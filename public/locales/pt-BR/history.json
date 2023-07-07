@@ -1,7 +1,9 @@
 {
   "title": "Histórico",
   "tasks": {
-    "title": "Tarefas",
+    "title": "Ciclos",
+    "cycle_one": "{{count}} tarefa",
+    "cycle_other": "{{count}} tarefas",
     "description": "Descrição",
     "duration": "Duração",
     "start": "Início",
@@ -12,6 +14,10 @@
       "done": "Concluído",
       "stopped": "Interrompido",
       "in_progress": "Em andamento"
+    },
+    "empty": {
+      "title": "Nenhum ciclo até o momento",
+      "description": "Você poderá conferir seus ciclos iniciados aqui"
     }
   }
 }
