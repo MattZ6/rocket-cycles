@@ -1,7 +1,9 @@
 {
   "title": "History",
   "tasks": {
-    "title": "Tasks",
+    "title": "Cycles",
+    "cycle_one": "{{count}} task",
+    "cycle_other": "{{count}} tasks",
     "description": "Description",
     "duration": "Duration",
     "start": "Start",
@@ -12,6 +14,10 @@
       "done": "Done",
       "stopped": "Stopped",
       "in_progress": "In progress"
+    },
+    "empty": {
+      "title": "No cycles so far",
+      "description": "You can check your started cycles here"
     }
   }
 }
