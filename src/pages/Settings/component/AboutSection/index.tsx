@@ -1,4 +1,9 @@
-import { GithubLogo, ArrowUpRight, Scroll } from '@phosphor-icons/react'
+import {
+  GithubLogo,
+  ArrowUpRight,
+  Scroll,
+  GitCommit,
+} from '@phosphor-icons/react'
 import { useTranslation } from 'react-i18next'
 
 import { app } from '@config/app'
@@ -61,20 +66,34 @@ export function AboutSection() {
           </BlockRow.Right>
         </BlockRow.Root>
 
-        <Block.Separator />
+        {import.meta.env.PROD && (
+          <>
+            <Block.Separator />
 
-        <BlockRow.Root>
-          <BlockRow.Content>
-            <BlockRow.Title>{t('about.commit.title')}</BlockRow.Title>
-            <BlockRow.Description>
-              {t('about.commit.description')}
-            </BlockRow.Description>
-          </BlockRow.Content>
+            <BlockRow.Root>
+              <BlockRow.Content>
+                <BlockRow.Title>{t('about.commit.title')}</BlockRow.Title>
+                <BlockRow.Description>
+                  {t('about.commit.description')}
+                </BlockRow.Description>
+              </BlockRow.Content>
 
-          <BlockRow.Right>
-            <Styles.CommitHash>{app.commitHash}</Styles.CommitHash>
-          </BlockRow.Right>
-        </BlockRow.Root>
+              <BlockRow.Right>
+                <Tooltip content={t('about.commit.link.tooltip')}>
+                  <Styles.ExternalLink
+                    href={`${app.author.github.url}/commits/${app.commitHash}`}
+                    target="_blank"
+                  >
+                    <GitCommit size={20} />
+                    <Styles.CommitHash>
+                      {app.commitHash.substring(0, 7)}
+                    </Styles.CommitHash>
+                  </Styles.ExternalLink>
+                </Tooltip>
+              </BlockRow.Right>
+            </BlockRow.Root>
+          </>
+        )}
 
         <Block.Separator />
 
