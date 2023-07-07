@@ -31,7 +31,7 @@ function BaseOptionCard({ value, selected = false, onSelect }: Props) {
       aria-selected={!!selected}
       onClick={handleSelect}
     >
-      <Styles.ImageContainer></Styles.ImageContainer>
+      <Styles.ImageContainer />
 
       <Styles.Footer selected={!!selected}>
         <Icon aria-hidden size={18} />
