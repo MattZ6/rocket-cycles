@@ -30,7 +30,10 @@
     },
     "commit": {
       "title": "Commit hash",
-      "description": "SHA from commit that generates the build"
+      "description": "SHA from commit that generates the build",
+      "link": {
+        "tooltip": "View on GitHub"
+      }
     },
     "author": {
       "title": "Author",
