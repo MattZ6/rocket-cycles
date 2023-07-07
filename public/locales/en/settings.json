@@ -4,7 +4,8 @@
     "title": "Appearance",
     "locale": {
       "title": "Language",
-      "description": "Select platform language"
+      "description": "Select platform language",
+      "select-placeholder": "Select a language"
     },
     "theme": {
       "title": "Interface theme",
