@@ -5,6 +5,7 @@
   ],
   "rules": {
     "camelcase": "off",
+    "react/self-closing-comp": "error",
     "import-helpers/order-imports": [
       "warn",
       {

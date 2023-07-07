@@ -41,7 +41,7 @@ export function AboutSection() {
           </BlockRow.Right>
         </BlockRow.Root>
 
-        <Block.Separator></Block.Separator>
+        <Block.Separator />
 
         <BlockRow.Root>
           <BlockRow.Content>
@@ -61,7 +61,7 @@ export function AboutSection() {
           </BlockRow.Right>
         </BlockRow.Root>
 
-        <Block.Separator></Block.Separator>
+        <Block.Separator />
 
         <BlockRow.Root>
           <BlockRow.Content>
@@ -76,7 +76,7 @@ export function AboutSection() {
           </BlockRow.Right>
         </BlockRow.Root>
 
-        <Block.Separator></Block.Separator>
+        <Block.Separator />
 
         <BlockRow.Root>
           <BlockRow.Content>
@@ -94,7 +94,7 @@ export function AboutSection() {
           </BlockRow.Right>
         </BlockRow.Root>
 
-        <Block.Separator></Block.Separator>
+        <Block.Separator />
 
         <BlockRow.Root>
           <BlockRow.Content>
