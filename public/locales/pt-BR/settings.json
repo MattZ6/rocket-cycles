@@ -4,7 +4,8 @@
     "title": "Aparência",
     "locale": {
       "title": "Idioma",
-      "description": "Selecionar o idioma da plataforma"
+      "description": "Selecionar o idioma da plataforma",
+      "select-placeholder": "Selecione um idioma"
     },
     "theme": {
       "title": "Tema da interface",

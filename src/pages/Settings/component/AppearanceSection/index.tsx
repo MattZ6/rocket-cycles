@@ -2,9 +2,9 @@ import { useTranslation } from 'react-i18next'
 
 import { useTheme } from '@hooks/useTheme'
 
-import { Block, BlockField } from '@components/Block'
+import { Block, BlockField, BlockRow } from '@components/Block'
 
-import { OptionCard } from './components'
+import { LanguageSelect, OptionCard } from './components'
 import { AppearanceSectionStyles as Styles } from './styles'
 
 export function AppearanceSection() {
@@ -18,16 +18,20 @@ export function AppearanceSection() {
       </Block.Header>
 
       <Block.Content withPadding>
-        {/* <BlockRow.Root>
+        <BlockRow.Root>
           <BlockRow.Content>
             <BlockRow.Title>{t('appearance.locale.title')}</BlockRow.Title>
             <BlockRow.Description>
               {t('appearance.locale.description')}
             </BlockRow.Description>
           </BlockRow.Content>
-        </BlockRow.Root> */}
 
-        {/* <Block.Separator></Block.Separator> */}
+          <BlockRow.Right>
+            <LanguageSelect />
+          </BlockRow.Right>
+        </BlockRow.Root>
+
+        <Block.Separator />
 
         <BlockField.Root>
           <BlockField.Header>
