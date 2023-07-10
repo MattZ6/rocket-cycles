@@ -7,7 +7,7 @@ import {
   useState,
 } from 'react'
 
-import { LocalStorageUtils } from '@utils/localStorage'
+import { LocalStorageUtils } from '@utils/LocalStorage'
 
 import { darkTheme, lightTheme } from '@styles/stitches.config'
 
@@ -96,8 +96,12 @@ function ThemeProvider({ children }: ThemeProviderTypes.Props) {
     })
 
     return () => {
-      darkModeMediaQueryList.removeEventListener('change', () => {})
-      lightModeMediaQueryList.removeEventListener('change', () => {})
+      darkModeMediaQueryList.removeEventListener('change', (e) => {
+        applyColorMode(e.matches ? 'dark' : 'light')
+      })
+      lightModeMediaQueryList.removeEventListener('change', (e) => {
+        applyColorMode(e.matches ? 'light' : 'dark')
+      })
     }
   }, [theme])
 

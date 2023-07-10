@@ -27,8 +27,8 @@ dependencies:
     specifier: 2.30.0
     version: 2.30.0
   i18next:
-    specifier: 23.2.7
-    version: 23.2.7
+    specifier: 23.2.8
+    version: 23.2.8
   i18next-browser-languagedetector:
     specifier: 7.1.0
     version: 7.1.0
@@ -49,7 +49,7 @@ dependencies:
     version: 7.45.1(react@18.2.0)
   react-i18next:
     specifier: 13.0.1
-    version: 13.0.1(i18next@23.2.7)(react-dom@18.2.0)(react@18.2.0)
+    version: 13.0.1(i18next@23.2.8)(react-dom@18.2.0)(react@18.2.0)
   react-router-dom:
     specifier: 6.14.1
     version: 6.14.1(react-dom@18.2.0)(react@18.2.0)
@@ -65,11 +65,11 @@ devDependencies:
     specifier: 17.6.6
     version: 17.6.6
   '@rocketseat/eslint-config':
-    specifier: 1.2.0
-    version: 1.2.0(eslint@8.44.0)(typescript@5.1.6)
+    specifier: 1.3.0
+    version: 1.3.0(eslint@8.44.0)(typescript@5.1.6)
   '@types/node':
-    specifier: 20.4.0
-    version: 20.4.0
+    specifier: 20.4.1
+    version: 20.4.1
   '@types/react':
     specifier: 18.2.14
     version: 18.2.14
@@ -77,8 +77,8 @@ devDependencies:
     specifier: 18.2.6
     version: 18.2.6
   '@vitejs/plugin-react':
-    specifier: 4.0.2
-    version: 4.0.2(vite@4.4.0)
+    specifier: 4.0.3
+    version: 4.0.3(vite@4.4.2)
   eslint:
     specifier: 8.44.0
     version: 8.44.0
@@ -95,8 +95,8 @@ devDependencies:
     specifier: 5.1.6
     version: 5.1.6
   vite:
-    specifier: 4.4.0
-    version: 4.4.0(@types/node@20.4.0)
+    specifier: 4.4.2
+    version: 4.4.2(@types/node@20.4.1)
 
 packages:
 
@@ -425,15 +425,15 @@ packages:
       '@commitlint/execute-rule': 17.4.0
       '@commitlint/resolve-extends': 17.4.4
       '@commitlint/types': 17.4.4
-      '@types/node': 20.4.0
+      '@types/node': 20.4.1
       chalk: 4.1.2
       cosmiconfig: 8.2.0
-      cosmiconfig-typescript-loader: 4.3.0(@types/node@20.4.0)(cosmiconfig@8.2.0)(ts-node@10.9.1)(typescript@5.1.6)
+      cosmiconfig-typescript-loader: 4.3.0(@types/node@20.4.1)(cosmiconfig@8.2.0)(ts-node@10.9.1)(typescript@5.1.6)
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       lodash.uniq: 4.5.0
       resolve-from: 5.0.0
-      ts-node: 10.9.1(@types/node@20.4.0)(typescript@5.1.6)
+      ts-node: 10.9.1(@types/node@20.4.1)(typescript@5.1.6)
       typescript: 5.1.6
     transitivePeerDependencies:
       - '@swc/core'
@@ -1377,8 +1377,8 @@ packages:
     engines: {node: '>=14'}
     dev: false
 
-  /@rocketseat/eslint-config@1.2.0(eslint@8.44.0)(typescript@5.1.6):
-    resolution: {integrity: sha512-Ew1D0DGR2Rf/4nL7t4R2nmVwjnJ9Bxaq1jsW2b4YLC5GRei4bbISzOoPHFuqDbRcy66PxNcHc3iLb0ahPvd36A==}
+  /@rocketseat/eslint-config@1.3.0(eslint@8.44.0)(typescript@5.1.6):
+    resolution: {integrity: sha512-NP7v/bbAWjp8NufV1WwlfnwPp1tE8NC3gWBH/GIXzarIIwGUnGdYzSlmAQme+zBySEVvHgYIrdqKHQi9aLf+qw==}
     peerDependencies:
       eslint: ^7.23.0 || ^8.0.0
       typescript: '>=3.3.1'
@@ -1442,8 +1442,8 @@ packages:
     resolution: {integrity: sha512-jhuKLIRrhvCPLqwPcx6INqmKeiA5EWrsCOPhrlFSrbrmU4ZMPjj5Ul/oLCMDO98XRUIwVm78xICz4EPCektzeQ==}
     dev: true
 
-  /@types/node@20.4.0:
-    resolution: {integrity: sha512-jfT7iTf/4kOQ9S7CHV9BIyRaQqHu67mOjsIQBC3BKZvzvUB6zLxEwJ6sBE3ozcvP8kF6Uk5PXN0Q+c0dfhGX0g==}
+  /@types/node@20.4.1:
+    resolution: {integrity: sha512-JIzsAvJeA/5iY6Y/OxZbv1lUcc8dNSE77lb2gnBH+/PJ3lFR1Ccvgwl5JWnHAkNHcRsT0TbpVOsiMKZ1F/yyJg==}
     dev: true
 
   /@types/normalize-package-data@2.4.1:
@@ -1602,8 +1602,8 @@ packages:
       eslint-visitor-keys: 3.4.1
     dev: true
 
-  /@vitejs/plugin-react@4.0.2(vite@4.4.0):
-    resolution: {integrity: sha512-zbnVp3Esfg33zDaoLrjxG+p/dPiOtpvJA+1oOEQwSxMMTRL9zi1eghIcd2WtLjkcKnPsa3S15LzS/OzDn2BOCA==}
+  /@vitejs/plugin-react@4.0.3(vite@4.4.2):
+    resolution: {integrity: sha512-pwXDog5nwwvSIzwrvYYmA2Ljcd/ZNlcsSG2Q9CNDBwnsd55UGAyr2doXtB5j+2uymRCnCfExlznzzSFbBRcoCg==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       vite: ^4.2.0
@@ -1612,7 +1612,7 @@ packages:
       '@babel/plugin-transform-react-jsx-self': 7.22.5(@babel/core@7.22.6)
       '@babel/plugin-transform-react-jsx-source': 7.22.5(@babel/core@7.22.6)
       react-refresh: 0.14.0
-      vite: 4.4.0(@types/node@20.4.0)
+      vite: 4.4.2(@types/node@20.4.1)
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -2013,7 +2013,7 @@ packages:
     resolution: {integrity: sha512-ASFBup0Mz1uyiIjANan1jzLQami9z1PoYSZCiiYW2FczPbenXc45FZdBZLzOT+r6+iciuEModtmCti+hjaAk0A==}
     dev: true
 
-  /cosmiconfig-typescript-loader@4.3.0(@types/node@20.4.0)(cosmiconfig@8.2.0)(ts-node@10.9.1)(typescript@5.1.6):
+  /cosmiconfig-typescript-loader@4.3.0(@types/node@20.4.1)(cosmiconfig@8.2.0)(ts-node@10.9.1)(typescript@5.1.6):
     resolution: {integrity: sha512-NTxV1MFfZDLPiBMjxbHRwSh5LaLcPMwNdCutmnHJCKoVnlvldPWlllonKwrsRJ5pYZBIBGRWWU2tfvzxgeSW5Q==}
     engines: {node: '>=12', npm: '>=6'}
     peerDependencies:
@@ -2022,9 +2022,9 @@ packages:
       ts-node: '>=10'
       typescript: '>=3'
     dependencies:
-      '@types/node': 20.4.0
+      '@types/node': 20.4.1
       cosmiconfig: 8.2.0
-      ts-node: 10.9.1(@types/node@20.4.0)(typescript@5.1.6)
+      ts-node: 10.9.1(@types/node@20.4.1)(typescript@5.1.6)
       typescript: 5.1.6
     dev: true
 
@@ -3021,8 +3021,8 @@ packages:
       - encoding
     dev: false
 
-  /i18next@23.2.7:
-    resolution: {integrity: sha512-EsbHHvF6b+p+B6Cht5fYWY7VE/WYOrqB1+DNwa1UpLTw6mG5g4tc8KCEjUUOSMUA2yqCsdYQP+PqVq5nBMtOtQ==}
+  /i18next@23.2.8:
+    resolution: {integrity: sha512-wU0pMlJ91ZbB89i77G3YQ11/pBQrzgWpxJYl7HFyA9aU9v3aHMI/oBKQmAJNURr0A8cLG4EHjgSMK8IqQTp4PQ==}
     dependencies:
       '@babel/runtime': 7.22.6
     dev: false
@@ -3899,7 +3899,7 @@ packages:
       react: 18.2.0
     dev: false
 
-  /react-i18next@13.0.1(i18next@23.2.7)(react-dom@18.2.0)(react@18.2.0):
+  /react-i18next@13.0.1(i18next@23.2.8)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-gMO6N2GfSfuH7xlHSsZ/mZf+Py9bLm/+EDKIn5fNTuDTjcCcwmMU5UEuGCDk5mdfivbo7ySyYXBN7B9tbGUxiA==}
     peerDependencies:
       i18next: '>= 23.2.3'
@@ -3914,7 +3914,7 @@ packages:
     dependencies:
       '@babel/runtime': 7.22.6
       html-parse-stringify: 3.0.1
-      i18next: 23.2.7
+      i18next: 23.2.8
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
     dev: false
@@ -4451,7 +4451,7 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /ts-node@10.9.1(@types/node@20.4.0)(typescript@5.1.6):
+  /ts-node@10.9.1(@types/node@20.4.1)(typescript@5.1.6):
     resolution: {integrity: sha512-NtVysVPkxxrwFGUUxGYhfux8k78pQB3JqYBXlLRZgdGUqTO5wU/UyHop5p70iEbGhB7q5KmiZiU0Y3KlJrScEw==}
     hasBin: true
     peerDependencies:
@@ -4470,7 +4470,7 @@ packages:
       '@tsconfig/node12': 1.0.11
       '@tsconfig/node14': 1.0.3
       '@tsconfig/node16': 1.0.4
-      '@types/node': 20.4.0
+      '@types/node': 20.4.1
       acorn: 8.9.0
       acorn-walk: 8.2.0
       arg: 4.1.3
@@ -4631,8 +4631,8 @@ packages:
       spdx-expression-parse: 3.0.1
     dev: true
 
-  /vite@4.4.0(@types/node@20.4.0):
-    resolution: {integrity: sha512-Wf+DCEjuM8aGavEYiF77hnbxEZ+0+/jC9nABR46sh5Xi+GYeSvkeEFRiVuI3x+tPjxgZeS91h1jTAQTPFgePpA==}
+  /vite@4.4.2(@types/node@20.4.1):
+    resolution: {integrity: sha512-zUcsJN+UvdSyHhYa277UHhiJ3iq4hUBwHavOpsNUGsTgjBeoBlK8eDt+iT09pBq0h9/knhG/SPrZiM7cGmg7NA==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     peerDependencies:
@@ -4659,7 +4659,7 @@ packages:
       terser:
         optional: true
     dependencies:
-      '@types/node': 20.4.0
+      '@types/node': 20.4.1
       esbuild: 0.18.11
       postcss: 8.4.24
       rollup: 3.26.0
