@@ -5,8 +5,6 @@
 
   > Timer application for Ignite Bootcamp.
 
-  <strong>🚧 Under development... 🚧</strong>
-
   [![build-image]][build-url] [![license-image]][license-url] [![deploy-image]][deploy-url]
 
   <p></p>
