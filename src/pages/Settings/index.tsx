@@ -2,7 +2,11 @@ import { useTranslation } from 'react-i18next'
 
 import { Page } from '@components/Page'
 
-import { AboutSection, AppearanceSection } from './component'
+import {
+  AboutSection,
+  AppearanceSection,
+  RelatedAppsSection,
+} from './component'
 
 export default function SettingsPage() {
   const { t } = useTranslation('settings')
@@ -17,6 +21,8 @@ export default function SettingsPage() {
         <AppearanceSection />
 
         <AboutSection />
+
+        <RelatedAppsSection />
       </Page.Content>
     </Page.Root>
   )
