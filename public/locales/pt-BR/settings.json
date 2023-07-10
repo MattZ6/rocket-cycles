@@ -16,7 +16,7 @@
     "title": "Sobre",
     "version": {
       "title": "Versão",
-      "description": "Para motivos de debug",
+      "description": "Por motivos de debug",
       "link": {
         "tooltip": "Ver changelog"
       }
