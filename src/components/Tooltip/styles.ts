@@ -39,12 +39,12 @@ export namespace TooltipStyles {
   })
 
   export const Content = styled(TooltipContent, {
-    color: '$tooltipText',
-    fontSize: '$normal',
+    fontSize: '12px',
     fontWeight: '$medium',
     textAlign: 'center',
+    color: '$tooltipText',
 
-    boxShadow: '0px 3px 10px rgba(0, 0, 0, 0.2)',
+    boxShadow: '0px 10px 38px rgba(0, 0, 0, 0.32)',
     userSelect: 'none',
 
     maxWidth: '240px',
