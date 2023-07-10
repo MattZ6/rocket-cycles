@@ -46,6 +46,14 @@ pnpm i
 ```
 > You can also run `yarn` or `npm i` instead.
 
+### Environment variables
+
+Copy `.env.example` to `.env.local`:
+
+```
+cp .env.example .env.local
+```
+
 ### Develop
 
 Start local development server:
