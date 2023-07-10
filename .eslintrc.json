@@ -6,6 +6,7 @@
   "rules": {
     "camelcase": "off",
     "react/self-closing-comp": "error",
+    "@typescript-eslint/no-namespace": "off",
     "import-helpers/order-imports": [
       "warn",
       {
