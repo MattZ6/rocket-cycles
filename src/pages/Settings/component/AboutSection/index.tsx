@@ -81,7 +81,7 @@ export function AboutSection() {
               <BlockRow.Right>
                 <Tooltip content={t('about.commit.link.tooltip')}>
                   <Styles.ExternalLink
-                    href={`${app.author.github.url}/commits/${app.commitHash}`}
+                    href={`${app.github.url}/commit/${app.commitHash}`}
                     target="_blank"
                   >
                     <GitCommit size={20} />
