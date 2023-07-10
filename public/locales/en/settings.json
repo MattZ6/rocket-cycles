@@ -48,5 +48,14 @@
         "title": "View page"
       }
     }
+  },
+  "related-apps": {
+    "title": "Related apps",
+    "rocket-todo": {
+      "description": "Simpliest way to manage your tasks",
+      "link": {
+        "title": "Access"
+      }
+    }
   }
 }

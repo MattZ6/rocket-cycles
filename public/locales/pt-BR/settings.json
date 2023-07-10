@@ -48,5 +48,14 @@
         "title": "Ver página"
       }
     }
+  },
+  "related-apps": {
+    "title": "Apps relacionados",
+    "rocket-todo": {
+      "description": "A forma mais simples de gerenciar suas tarefas",
+      "link": {
+        "title": "Acessar"
+      }
+    }
   }
 }
